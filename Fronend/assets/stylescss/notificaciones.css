@@ -33,3 +33,11 @@
     border-radius: 8px; 
 }
 /* Fin de estilos para notification */
+
+
+
+/* Inicio para las alertas : Estilos para las alertas */
+.alert {
+    font-size: 16px;
+}
+/* Fin para las alertas */
