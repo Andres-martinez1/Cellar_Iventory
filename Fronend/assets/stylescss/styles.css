@@ -1,0 +1,25 @@
+/* Inicio de la sección Carrusel: Estilos principales de la sección hero */
+.hero-section {
+    background-color: #f8f9fa; 
+    margin-top: 0; 
+    text-align: center; 
+}
+
+/* Estilos para las imágenes dentro del carrusel */
+.carousel-inner img {
+    height: 600px; 
+    object-fit: cover; 
+}
+
+/*Estilos del título en la sección hero */
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: bold; 
+}
+
+/* Estilos del párrafo en la sección hero */
+.hero-section p {
+    font-size: 18px; 
+    margin-top: 20px; 
+}
+/* Fin de la sección Hero */
