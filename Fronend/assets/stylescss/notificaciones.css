@@ -1,0 +1,6 @@
+/* Inicio de estilos para las cards: Estilos generales para las tarjetas */
+.card {
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/* Fin de estilos para las cards */
