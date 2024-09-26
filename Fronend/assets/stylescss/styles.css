@@ -23,3 +23,30 @@
     margin-top: 20px; 
 }
 /* Fin de la sección Hero */
+
+
+
+
+/* Inicio de la sección Categorías: Estilos principales de la sección de categorías */
+.category-section {
+    padding: 50px 0; 
+}
+
+/* Estilos del título en la sección de categorías */
+.category-section h2 {
+    text-align: center; 
+    margin-bottom: 40px; 
+    font-size: 36px; 
+}
+
+/* Estilos de las tarjetas dentro de la sección de categorías */
+.category-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+}
+
+/* Efectos hover para las tarjetas de categoría */
+.category-card:hover {
+    transform: translateY(-5px); 
+}
+/* Fin de la sección Categorías */
