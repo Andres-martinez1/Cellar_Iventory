@@ -104,3 +104,20 @@
     margin-top: 300px; 
 }
 /* Fin del menú lateral Offcanvas */
+
+
+
+/* Inicio del Hover en los elementos de navegación: Efecto hover para los elementos de navegación */
+.nav-item:hover {
+    background-color: #C2BFBF; 
+    border-radius: 10px; 
+    padding: 10px; 
+}
+
+/* Efecto hover para los elementos adicionales en la navegación */
+.nav-itemlo:hover {
+    background-color: #C2BFBF; 
+    border-radius: 10px; 
+    padding: 10px; 
+}
+/* Fin del Hover en los elementos de navegación */
