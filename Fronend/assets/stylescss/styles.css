@@ -163,3 +163,16 @@
     color: #C2BFBF; 
 }
 /* Fin de la paginación */
+
+
+
+
+/* Inicio footer: Estilos para footer */
+footer {
+    background-color: #141B2D; 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center; 
+    margin-top: 100px; 
+}
+/* Fin footer */
