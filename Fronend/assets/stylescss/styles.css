@@ -121,3 +121,45 @@
     padding: 10px; 
 }
 /* Fin del Hover en los elementos de navegación */
+
+
+
+
+/* Inicio de la paginación: Estilos para los enlaces de paginación */
+.page-link {
+    display: block; 
+    padding: 8px 16px; 
+    color: #000000; 
+    background-color: #ffffff;
+    border: 1px solid #ffffff; 
+    border-radius: 10px; 
+    text-decoration: none; 
+}
+
+/* Efectos hover en los enlaces de paginación */
+.page-link:hover {
+    color: #000000; 
+    background-color: #f1f1f1; 
+    border-color: #ffffff; 
+}
+
+/* Estilos para el enlace activo en la paginación */
+.page-item.active .page-link {
+    color: #fff; /* Texto blanco */
+    background-color: #000000; 
+    border-color: #000000;
+    border-radius: 10px; 
+}
+
+/* Estilos para los botones de tipo secundario */
+.btn-secondary {
+    border-color: rgba(0, 0, 0, 0); 
+    color: gray;
+}
+
+/* Efectos hover para los botones secundarios */
+.btn-secondary:hover {
+    border-color: rgba(0, 0, 0, 0); 
+    color: #C2BFBF; 
+}
+/* Fin de la paginación */
