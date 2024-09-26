@@ -4,3 +4,32 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 /* Fin de estilos para las cards */
+
+
+/* Inicio de estilos para notification: Estilos para las notificaciones */
+.notification {
+    padding: 15px; 
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Efecto hover para las notificaciones */
+.notification:hover {
+    background-color: #e9ecef; 
+    text-decoration: none; 
+}
+
+/* Estilos para los párrafos dentro de la notificación */
+.notification p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la imagen dentro de la notificación */
+.notification-image {
+    height: 150px; 
+    border-radius: 8px; 
+}
+/* Fin de estilos para notification */
