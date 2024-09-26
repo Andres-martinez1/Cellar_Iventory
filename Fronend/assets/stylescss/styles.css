@@ -50,3 +50,18 @@
     transform: translateY(-5px); 
 }
 /* Fin de la sección Categorías */
+
+
+
+/* Inicio de la barra de navegación: Estilos para la barra de navegación */
+.navbar {
+    position: sticky; /* La mantiene fija al bajar la  página */
+    top: 0; /* Siempre en la parte superior de la página */
+    z-index: 1000; 
+}
+
+/* Estilos para la barra de búsqueda dentro de la navegación */
+.search-bar {
+    width: 300px; 
+}
+/* Fin de la barra de navegación */
