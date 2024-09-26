@@ -24,13 +24,13 @@
             <img src="/Fronend/assets/img/logo.png" alt="Logo" style="width: 60px;"> 
             </button>
 
-              <!-- Formulario de búsqueda -->
+            <!-- Formulario de búsqueda -->
             <form class="d-flex ms-5">
                 <input class="form-control search-bar" type="search" placeholder="Encontrar..." aria-label="Buscar">
                 <button class="btn btn-outline-light ms-2" type="submit">Ir</button>
             </form>
 
-                <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
+            <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item1">
@@ -147,6 +147,63 @@
     </div>
 </div>
 <!-- Fin de Menú lateral -->
+
+
+<!-- Inicio de Carrusel -->
+<!-- Sección de héroe con carrusel de imágenes -->
+<section class="hero-section">
+    <div id="heroCarousel" class="carousel slide mt-0" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+
+            <!-- Primer sección del Carrusel -->
+            <div class="carousel-item active">
+                <a class="nav-link" href="#">
+                <img src="/Fronend/assets/img/multi.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h5 class="display-1 ">MULTIMEDIA</h5>
+                    <p class="lead">Las bodegas de multimedia almacena equipos audiovisuales, dispositivos de grabación y archivos digitales, asegurando la correcta conservación y organización de recursos para la producción y edición de contenido multimedia</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Segundo sección del Carrusel -->
+            <div class="carousel-item">
+                <a class="nav-link" href="#">
+                <img src="/Fronend/assets/img/14.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h5 class="display-1">Agroindustria</h5>
+                    <p class="lead">Las bodegas de agroindustria almacena materias primas, productos semiacabados y equipos relacionados con la producción agrícola e industrial.</p>
+                </a>
+                </div>
+
+
+            <!-- Tercer sección del Carrusel -->   
+            </div>
+            <div class="carousel-item">
+                <a class="nav-link" href="#">
+                <img src="/Fronend/assets/img/15.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h5 class="display-1">Título del Slide 3</h5>
+                    <p class="lead">Descripción breve del Slide 3.</p>
+                </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Botones de navegación del carrusel (cambio automático) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</section>
+<!-- Fin de Carrusel -->
     
 </body>
 </html>
