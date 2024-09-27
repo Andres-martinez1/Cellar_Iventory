@@ -27,3 +27,10 @@ canvas {
     width: 100%; 
 }
 /* Fin de los estilos para canvas */
+
+
+/* Inicio  Estilos para imágenes fluidas */
+.img-fluid {
+    border-radius: 10px; 
+}
+/* Fin de la clase .img-fluid */
