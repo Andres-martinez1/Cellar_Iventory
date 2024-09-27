@@ -30,3 +30,20 @@ body {
     color: black;
 }
 /* Fin de los estilos para el texto oscuro general */
+
+
+
+/* Inicio de los estilos para el botón primario (editar perfil)*/
+.btn-primary {
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+/* Inicio de los efectos hover para el botón primario */
+.btn-primary:hover {
+    border-color: rgb(147, 146, 146);
+    background-color: rgb(147, 146, 146);
+    color: rgb(0, 0, 0);
+}
+/* Fin de los estilos para el botón primario (editar perfil)*/
