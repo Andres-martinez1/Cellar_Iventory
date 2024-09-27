@@ -62,3 +62,20 @@
     color: white;
 }
 /* Fin de los estilos para el botón (cancelar)  */
+
+
+
+/* Inicio de los estilos para el botón (guardar) */
+.btn-1{
+    background-color: #000000; 
+    border-color: #000000; 
+    color: white; 
+}
+
+/* Inicio de los efectos hover para el primer botón */
+.btn-1:hover{
+    background-color: #063666; 
+    border-color: #063666; 
+    color: white; 
+}
+/* Fin de los estilos para el el botón (guardar)*/
