@@ -1,0 +1,16 @@
+/* Inicio de los estilos para la imagen de bodega */
+.bodega-img {
+    height: 200px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Inicio de los estilos para las imágenes dentro de la tarjeta de bodega */
+.bodega-img img {
+    max-width: 100%; 
+    max-height: 100%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
+/* Fin de los estilos para las tarjetas de bodega */
