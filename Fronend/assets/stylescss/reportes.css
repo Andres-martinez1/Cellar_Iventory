@@ -77,3 +77,20 @@ body {
     color: white;
 }
 /* Fin de los estilos para el botón primario (Descargar Word)*/
+
+
+
+/* Inicio de los estilos para el botón secundario (cancelar) */
+.btn-secondary {
+    background-color: #b5b5b5;
+    border-color: #b5b5b5;
+    color: rgb(0, 0, 0);
+}
+
+/* Inicio de los efectos hover para el botón secundario (cancelar) */
+.btn-secondary:hover {
+    background-color: #4b4b4b;
+    border-color: #4b4b4b;
+    color: white;
+}
+/* Fin de los estilos para el botón secundario (cancelar) */
