@@ -197,7 +197,62 @@
 <!-- Fin Modal para cambiar la foto de perfil -->
 
 
+<!-- Inicio de Modal para editar perfil -->
+<!-- Modal para editar perfil -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProfileModalLabel">Editar Perfil</h5>
+                <button type="button" class="btn-close7" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
 
+                <!-- Inicio de formulario para editar el nombre -->
+                <!-- formulario para editar el nombre -->
+                <form>
+                    <!-- Campo para editar el nombre -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" value="Juan Perez">
+                    </div>
+
+                    <!-- Campo para editar la descripción -->
+                    <div class="mb-3">
+                        <label for="descripcion" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="descripcion" rows="3">Hola, soy Juan Perez, un apasionado trabajador de bodega con años de experiencia...</textarea>
+                    </div>
+
+                    <!-- Campo para editar el departamento -->
+                    <div class="mb-3">
+                        <label for="departamento" class="form-label">Departamento</label>
+                        <input type="text" class="form-control" id="departamento" value="Bodega TIC">
+                    </div>
+
+                    <!-- Campo para editar la fecha de ingreso -->
+                    <div class="mb-3">
+                        <label for="fechaIngreso" class="form-label">Fecha de Ingreso</label>
+                        <input type="text" class="form-control" id="fechaIngreso" value="Junio 2023">
+                    </div>
+
+                    <!-- Campo para editar habilidades técnicas -->
+                    <div class="mb-3">
+                        <label for="habilidades" class="form-label">Habilidades Técnicas</label>
+                        <textarea type="text" class="form-control" id="habilidades" rows="3">Manejo de inventario, Uso de sistemas de gestión de almacenes...></textarea>
+                    </div>
+                </form>
+                <!-- Fin de formulario para editar el nombre -->
+            </div>
+            <div class="modal-footer">
+
+                <!-- Botones para cerrar  y guardar cambios -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary1">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin de Modal para editar perfil -->
 
 
 <!-- Inicio de footer -->
