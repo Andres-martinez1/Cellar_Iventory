@@ -84,3 +84,11 @@ body {
     border-radius: 70px;
 }
 /* Fin de los estilos para las imágenes con clase 'shadow' */
+
+
+
+/* Inicio de los estilos para el contenedor */
+.container{
+    margin-top: 100px;
+}
+/* Fin de los estilos para el contenedor */
