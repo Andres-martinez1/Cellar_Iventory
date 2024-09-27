@@ -163,6 +163,41 @@
 <!-- Fin de Contenido principal  -->
 
 
+<!-- Inicio Modal para cambiar la foto de perfil -->
+<!-- Modal para cambiar la foto de perfil -->
+<div class="modal fade" id="changePhotoModal" tabindex="-1" aria-labelledby="changePhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="changePhotoModalLabel">Cambiar Foto de Perfil</h5>
+                <button type="button" class="btn-close7" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Inicio de formulario para Selecciona una nueva imagen -->
+                <!-- formulario para Selecciona una nueva imagen -->
+                <form>
+                    <div class="mb-3 text-center">
+                        <label for="fileInputModal" class="form-label">Selecciona una nueva imagen</label>
+                        <input type="file" class="form-control" id="fileInputModal">
+                        <!-- Previsualización de la imagen seleccionada -->
+                        <img id="previewImage" class="img-thumbnail mt-3" src="/Fronend/assets/img/avatar.png" alt="Previsualización de imagen" style="max-width: 200px;">
+                    </div>
+                </form>
+                <!-- Fin de formulario para Selecciona una nueva imagen -->
+            </div>
+            <div class="modal-footer">
+                <!-- Botones para cerrar  y guardar cambios -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary1">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Modal para cambiar la foto de perfil -->
+
+
+
 
 
 <!-- Inicio de footer -->
