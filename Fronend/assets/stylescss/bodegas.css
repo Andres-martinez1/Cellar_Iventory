@@ -1,3 +1,17 @@
+/* Inicio de los estilos para las tarjetas de bodega */
+.bodega-card { 
+    border: 1px solid #e3e3e3; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 4px gray; 
+    transition: transform 0.3s ease; 
+    margin-top: 50px; 
+}
+
+/* Inicio de los efectos hover para la tarjeta de bodega */
+.bodega-card:hover {
+    transform: scale(1.05); /* Escala ligeramente la tarjeta al pasar el mouse */
+}
+
 /* Inicio de los estilos para la imagen de bodega */
 .bodega-img {
     height: 200px;
@@ -14,3 +28,20 @@
     box-shadow: 5px 5px 10px gray;
 }
 /* Fin de los estilos para las tarjetas de bodega */
+
+
+
+/* Inicio de los estilos para el botón (agregar bodega)*/
+.btn-dark{
+    border-color: black;
+    background-color: black;
+    color: white; 
+}
+
+/* Inicio de los efectos hover para el botón oscuro */
+.btn-dark:hover{
+    border-color: rgb(147, 146, 146); 
+    background-color: rgb(147, 146, 146); 
+    color: rgb(0, 0, 0); /
+}
+/* Fin de los estilos para el botón oscuro */
