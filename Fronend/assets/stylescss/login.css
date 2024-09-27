@@ -47,3 +47,24 @@ body {
     margin-top: 45px;
 }
 /* Fin de los estilos para los enlaces sin subrayado */
+
+
+
+/* Inicio de los estilos para el botón de éxito */
+.btn-success {
+    background-color: black;
+    border-color: black;
+    width: 230px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 45px;
+    margin-left: 188px;
+    margin-top: 10px;
+}
+
+/* Inicio de los efectos hover para el botón de éxito */
+.btn-success:hover {
+    background-color: black;
+    border-color: black;
+}
+/* Fin de los estilos para el botón de éxito */
