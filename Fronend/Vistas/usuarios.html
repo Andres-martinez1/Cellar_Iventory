@@ -215,6 +215,73 @@
     </div>
     <!-- Fin de Contenido principal de usuarios-->
 
+       <!-- Inicio de Modal para Añadir Usuario -->
+    <!-- Modal para Añadir Usuario -->
+    <div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addUserModalLabel">Añadir Usuario</h5>
+
+                    <!-- Botones para cerrar el modal-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Introduce los detalles para añadir un nuevo usuario.</p>
+
+                    <!-- Inicio de formulario para añadir nuevo usuario -->
+                    <!-- formulario para añadir nuevo usuario -->
+                    <form>
+
+                        <!-- Campo para agregar el nombre -->
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Introduce el nombre">
+                        </div>
+
+                        <!-- Campo para agregar el Apellido -->
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Introduce el apellido">
+                        </div>
+
+                        <!-- Campo para agregar la Identificacción -->
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Identificacion</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Introduce la identificacion">
+                        </div>
+
+                        <!-- Campo para agregar el Email -->
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="Introduce el email">
+                        </div>
+
+                        <!-- Campo para agregar el rol -->
+                        <div class="mb-3">
+                            <label for="userRole" class="form-label">Rol</label>
+                            <select class="form-select" id="userRole">
+                                <option selected>Seleccionar rol</option>
+                                <option value="admin">Administrador</option>
+                                <option value="admin">Instructor</option>
+                                <option value="editor">Lider</option>
+                                <option value="user">Aprendiz</option>
+                            </select>
+                        </div>
+                    </form>
+                    <!-- formulario para añadir nuevo usuario -->
+                </div>
+                <div class="modal-footer">
+
+                    <!-- Botones para cancelar  y confirmar -->
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Modal para editar perfil -->
+
 
 
 
