@@ -93,3 +93,16 @@ body {
 /* Fin de los estilos para el botón primario alternativo (guardar cambios)*/
 
 
+
+/* Inicio de los estilos para el modal */
+.modal-title {
+    color: #ffffff;
+}
+
+/* Inicio de los estilos para el encabezado del modal */
+.modal-header {
+    background: linear-gradient(#000000dd, rgb(0, 0, 0));
+    border-radius: 4px;
+}
+/* Fin de los estilos para el modal */
+
