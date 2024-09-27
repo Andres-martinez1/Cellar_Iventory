@@ -115,6 +115,108 @@
 <!-- Fin de Menú lateral -->
 
 
+    <!-- Inicio de Contenido principal de usuarios-->
+    <!-- Contenido principal (Tabla de datos de usuarios) -->
+    <div class="container mt-5">
+      
+        <div class="card">
+            <div class="card-body">
+               
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3>Usuarios</h3>
+
+                    
+                    <!-- Botón para añadir usuarios -->
+                    <button class="btn btn-add-user" data-bs-toggle="modal" data-bs-target="#addUserModal">+ Añadir Usuario</button>
+                </div>
+
+                <!-- Barra de búsqueda dentro de la tabla -->
+                <p class="text-muted">Gestiona tus usuarios</p>
+                <input id="buscarUsuarios" class="form-control mb-3" type="search" placeholder="Encontrar..." aria-label="Buscar">
+
+                <!-- Tabla que muestra los datos de los usuarios -->
+                <table id="tablaUsuarios"  class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+               
+                        <tr>
+                            <td>Juan</td>
+                            <td>Pérez</td>
+                            <td>juan@example.com</td>
+                            <td>Administrador</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-1">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-1">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ana</td>
+                            <td>Gómez</td>
+                            <td>ana@example.com</td>
+                            <td>Lider</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-2">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-2">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pedro</td>
+                            <td>Martínez</td>
+                            <td>pedro@example.com</td>
+                            <td>Instructor</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-3">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-3">Eliminar</button>
+                            </td>
+                        </tr>
+                   
+                        <tr>
+                            <td>Laura</td>
+                            <td>Fernández</td>
+                            <td>laura@example.com</td>
+                            <td>Aprendiz</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-4">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-4">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>López</td>
+                            <td>carlos@example.com</td>
+                            <td>Lider</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-5">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-5">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Contenido principal de usuarios-->
+
+
+
 
 <!-- Inicio de footer -->
 <footer>
