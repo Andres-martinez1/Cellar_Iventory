@@ -79,3 +79,13 @@
     color: white; 
 }
 /* Fin de los estilos para el el botón (guardar)*/
+
+
+
+/* Inicio de los estilos para la cabecera del modal */
+.modal-header{
+    background: linear-gradient(#000000dd, rgb(0, 0, 0)); 
+    border-radius: 4px; 
+    color: white; 
+}
+/* Fin de los estilos para la cabecera del modal */
