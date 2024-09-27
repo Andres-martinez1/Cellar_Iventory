@@ -24,3 +24,22 @@ body {
     border-radius: 10px;
 }
 /* Fin de los estilos para las cards */
+
+
+
+/* Inicio de los estilos personalizados para los botones */
+.btn-custom {
+    background-color: #000000;
+    border-color: #000000;
+    color: #fff;
+    outline: none;
+}
+
+/* Inicio de los efectos hover para los botones personalizados */
+.btn-custom:hover {
+    background-color: #b5b5b5;
+    border-color: #b5b5b5;
+    color: rgb(0, 0, 0);
+    outline: none;
+}
+/* Fin de los estilos personalizados para los botones */
