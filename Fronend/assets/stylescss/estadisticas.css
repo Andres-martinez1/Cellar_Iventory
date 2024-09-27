@@ -11,3 +11,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 /* Fin de la clase .card */
+
+
+/* Inicio de la barra de navegación */
+.navbar {
+    margin-bottom: 20px; 
+}
+/* Fin de la barra de navegación */
