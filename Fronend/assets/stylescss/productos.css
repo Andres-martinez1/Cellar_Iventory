@@ -1,0 +1,18 @@
+/* Inicio del efecto hover para la tarjeta */
+.card:hover {
+    transform: scale(1.05);
+    background-color: rgb(238, 235, 235); 
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+    font-size: 20px; 
+    font-weight: bold; /* Establece el texto en negrita para mayor énfasis */
+}
+
+/* Estilos para el texto de la tarjeta */
+.card-text {
+    font-size: 16px; 
+    color: #1b1b1cad; 
+}
+/* Fin de estilos para las cards */
