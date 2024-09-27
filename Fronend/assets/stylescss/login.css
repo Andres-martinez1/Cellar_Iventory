@@ -25,3 +25,15 @@ body {
     margin-top: 45px;
 }
 /* Fin de los estilos para el grupo de opciones del formulario */
+
+
+
+/* Inicio de los estilos para el texto centrado */
+.center-text {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    text-shadow: 3px 5px 7px grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Fin de los estilos para el texto centrado */
