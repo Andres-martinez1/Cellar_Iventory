@@ -60,3 +60,20 @@ body {
     color: white;
 }
 /* Fin de los estilos para el botón primario 1 (Descargar PDF) */
+
+
+
+/* Inicio de los estilos para el botón primario (Descargar Word)*/
+.btn-primary {
+    background-color: #000000;
+    border-color: #000000;
+    color: white;
+}
+
+/* Inicio de los efectos hover para el botón primario (Descargar Word) */
+.btn-primary:hover {
+    background-color: #14025d;
+    border-color: #14025d;
+    color: white;
+}
+/* Fin de los estilos para el botón primario (Descargar Word)*/
