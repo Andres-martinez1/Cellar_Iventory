@@ -18,3 +18,12 @@ body {
     margin-bottom: 20px; 
 }
 /* Fin de la barra de navegación */
+
+
+
+/* Inicio de los estilos para canvas */
+canvas {
+    height: 100%; 
+    width: 100%; 
+}
+/* Fin de los estilos para canvas */
