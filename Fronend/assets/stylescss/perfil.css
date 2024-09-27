@@ -106,3 +106,13 @@ body {
 }
 /* Fin de los estilos para el modal */
 
+
+
+/* Inicio de los estilos para las imágenes */
+img {
+    margin-top: -98px;
+    cursor: pointer;
+}
+/* Fin de los estilos para las imágenes */
+
+
