@@ -5,6 +5,7 @@ body {
 /* Fin de los estilos generales para el fondo */
 
 
+
 /* Inicio de los estilos para el contenedor principal */
 .container {
     margin-top: 50px;
@@ -15,3 +16,11 @@ body {
     margin-top: 100px;
 }
 /* Fin de los estilos para el contenedor principal */
+
+
+
+/* Inicio de los estilos para las cards */
+.card {
+    border-radius: 10px;
+}
+/* Fin de los estilos para las cards */
