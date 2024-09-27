@@ -50,3 +50,18 @@ canvas {
     border-color: #0370e6; 
 }
 /* Fin de la clase .edit-btn */
+
+
+/* Inicio de  Estilos para el botón de eliminación */
+.delete-btn {
+    background-color: #000000; 
+    border-color: #000000; 
+    color: white; 
+}
+
+/* Efecto hover para el botón de eliminación */
+.delete-btn:hover {
+    background-color: #c82333; 
+    border-color: #bd2130;
+}
+/* Fin de la clase .delete-btn */
