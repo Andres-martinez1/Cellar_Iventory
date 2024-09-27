@@ -3,3 +3,11 @@ body {
     background: linear-gradient(#ffffffdd, rgb(193, 189, 189)); 
 }
 /* Fin de la sección de estilos generales */
+
+
+/* Inicio de estilos de la card: Estilos generales para las tarjetas */
+.card {
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+/* Fin de la clase .card */
