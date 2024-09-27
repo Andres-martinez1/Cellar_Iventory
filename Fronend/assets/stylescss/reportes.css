@@ -94,3 +94,12 @@ body {
     color: white;
 }
 /* Fin de los estilos para el botón secundario (cancelar) */
+
+
+
+/* Inicio de los estilos para el pie de página */
+footer {
+    margin-top: 300px;
+}
+/* Fin de los estilos para el pie de página */
+
