@@ -116,6 +116,109 @@
 
 
 
+    <!-- Inicio de Contenido principal (reportes) -->
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="row">
+            <!-- Filtros -->
+            <div class="col-md-4 ">
+                <div class="card p-4 shadow-sm">
+                    <h5 class="card-title">Filtros</h5>
+
+                    <!-- Filtro Producto -->
+                    <div class="mb-3">
+                        <label for="filterProducto" class="form-label">Producto</label>
+                        <input type="text" id="filterProducto" class="form-control" placeholder="Ingresa el nombre del producto">
+                    </div>
+
+                    <!-- Filtro Bodega -->
+                    <div class="mb-3">
+                        <label for="filterBodega" class="form-label">Bodega</label>
+                        <input type="text" id="filterBodega" class="form-control" placeholder="Ingresa el número de bodega">
+                    </div>
+
+                    <!-- Botón para generar el reporte -->
+                    <button class="btn btn-custom w-100" data-bs-toggle="modal" data-bs-target="#reporteModal">Generar Reporte</button>
+                </div>
+            </div>
+
+            <!-- Tabla Resumen de Inventario -->
+            <div class="col-md-8">
+                <div class="card p-4 shadow-sm">
+                    <h5 class="card-title">Resumen de Inventario</h5>
+
+                    <!-- Tabla que muestra los datos de las bodegas -->
+
+                    <table class="table table-hover table-bordered" id="inventoryTable">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Bodega</th>
+                                <th>Cantidad</th>
+                                <th>Ubicación</th>
+                                <th>Fecha de Ingreso</th>
+                                <th>Proveedor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Producto A</td>
+                                <td>Bodega 1</td>
+                                <td>50</td>
+                                <td>Estantería 1, Fila 2</td>
+                                <td>2023-04-15</td>
+                                <td>Proveedor X</td>
+                            </tr>
+                            <tr>
+                                <td>Producto A</td>
+                                <td>Bodega 2</td>
+                                <td>25</td>
+                                <td>Estantería 3, Fila 1</td>
+                                <td>2023-02-28</td>
+                                <td>Proveedor Y</td>
+                            </tr>
+                            <tr>
+                                <td>Producto B</td>
+                                <td>Bodega 1</td>
+                                <td>75</td>
+                                <td>Estantería 2, Fila 3</td>
+                                <td>2023-06-01</td>
+                                <td>Proveedor X</td>
+                            </tr>
+                            <tr>
+                                <td>Producto B</td>
+                                <td>Bodega 3</td>
+                                <td>30</td>
+                                <td>Estantería 4, Fila 4</td>
+                                <td>2023-08-10</td>
+                                <td>Proveedor Z</td>
+                            </tr>
+                            <tr>
+                                <td>Producto C</td>
+                                <td>Bodega 2</td>
+                                <td>40</td>
+                                <td>Estantería 1, Fila 4</td>
+                                <td>2023-03-20</td>
+                                <td>Proveedor W</td>
+                            </tr>
+                            <tr>
+                                <td>Producto D</td>
+                                <td>Bodega 4</td>
+                                <td>15</td>
+                                <td>Estantería 3, Fila 2</td>
+                                <td>2023-07-22</td>
+                                <td>Proveedor X</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Contenido principal (reportes) -->
+
+
+
 
 <!-- Inicio de footer -->
 <footer>
