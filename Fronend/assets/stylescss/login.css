@@ -37,3 +37,13 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /* Fin de los estilos para el texto centrado */
+
+
+
+/* Inicio de los estilos para los enlaces sin subrayado */
+.text-decoration-none {
+    color: grey;
+    margin-right: 91px;
+    margin-top: 45px;
+}
+/* Fin de los estilos para los enlaces sin subrayado */
