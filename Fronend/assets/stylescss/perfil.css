@@ -12,3 +12,11 @@ body {
     color: black;
 }
 /* Fin de los estilos para el texto oscuro personalizado */
+
+
+
+/* Inicio de los estilos para el texto de la sección "Acerca de" */
+.about-text {
+    color: gray;
+}
+/* Fin de los estilos para el texto de la sección "Acerca de" */
