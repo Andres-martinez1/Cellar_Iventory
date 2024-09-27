@@ -45,3 +45,20 @@
     color: rgb(0, 0, 0); /
 }
 /* Fin de los estilos para el botón oscuro */
+
+
+
+/* Inicio de los estilos para el botón (agregar bodega)*/
+.btn-2{
+    background-color: #7c7a7a;
+    border-color: #7c7a7a; 
+    color: white; 
+}
+
+/* Inicio de los efectos hover para el segundo botón */
+.btn-2:hover{
+    background-color: #c82333;
+    border-color: #bd2130; 
+    color: white;
+}
+/* Fin de los estilos para el botón (cancelar)  */
