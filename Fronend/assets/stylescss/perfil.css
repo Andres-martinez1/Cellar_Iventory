@@ -47,3 +47,13 @@ body {
     color: rgb(0, 0, 0);
 }
 /* Fin de los estilos para el botón primario (editar perfil)*/
+
+
+
+/* Inicio de los estilos para el encabezado de la tarjeta */
+.card-header1 {
+    background-color: #000000;
+    padding: 70px;
+    border-radius: 4px;
+}
+/* Fin de los estilos para el encabezado de la tarjeta */
