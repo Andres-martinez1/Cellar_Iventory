@@ -20,3 +20,13 @@ body {
     color: gray;
 }
 /* Fin de los estilos para el texto de la sección "Acerca de" */
+
+
+
+/* Inicio de los estilos para el texto oscuro general */
+.text-dark {
+    margin-top: 5px;
+    font-size: 13px;
+    color: black;
+}
+/* Fin de los estilos para el texto oscuro general */
