@@ -5,3 +5,23 @@ body {
 }
 /* Fin de los estilos generales para el cuerpo */
 
+
+
+/* Inicio de los estilos para los campos de formulario */
+.form-control {
+    width: 420px;
+    height: 48px;
+    background-color: #E6E4E4;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Inicio de los estilos para el grupo de opciones del formulario */
+.form-check {
+    margin-left: 103px;
+    margin-top: 45px;
+}
+/* Fin de los estilos para el grupo de opciones del formulario */
