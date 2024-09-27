@@ -76,3 +76,11 @@ body {
     border-radius: 50px;
 }
 /* Fin de los estilos para las imágenes con clase 'foto' */
+
+
+
+/* Inicio de los estilos para las imágenes con clase 'shadow' */
+.shadow {
+    border-radius: 70px;
+}
+/* Fin de los estilos para las imágenes con clase 'shadow' */
