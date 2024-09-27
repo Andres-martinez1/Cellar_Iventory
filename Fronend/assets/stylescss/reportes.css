@@ -3,3 +3,15 @@ body {
     background: linear-gradient(#ffffffdd, rgb(193, 189, 189));
 }
 /* Fin de los estilos generales para el fondo */
+
+
+/* Inicio de los estilos para el contenedor principal */
+.container {
+    margin-top: 50px;
+}
+
+/* Inicio de los estilos para las filas del contenedor */
+.container .row {
+    margin-top: 100px;
+}
+/* Fin de los estilos para el contenedor principal */
