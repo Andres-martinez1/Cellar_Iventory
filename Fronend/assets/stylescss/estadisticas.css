@@ -34,3 +34,19 @@ canvas {
     border-radius: 10px; 
 }
 /* Fin de la clase .img-fluid */
+
+
+
+/* Inicio de Estilos para el botón de edición */
+.edit-btn {
+    background-color: #7c7a7a; 
+    border-color: #7c7a7a; 
+    color: white; 
+}
+
+/* Efecto hover para el botón de edición */
+.edit-btn:hover {
+    background-color: #045cbb;
+    border-color: #0370e6; 
+}
+/* Fin de la clase .edit-btn */
