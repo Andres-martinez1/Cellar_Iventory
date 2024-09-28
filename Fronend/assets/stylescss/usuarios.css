@@ -36,3 +36,23 @@ body{
     color: rgb(0, 0, 0); 
 }
 /* Fin de los estilos para el botón de agregar usuario */
+
+
+
+/* Inicio de los estilos para el modal */
+.modal-header {
+    border-bottom: none; 
+}
+
+/* Inicio de los estilos para el pie del modal */
+.modal-footer {
+    border-top: none; 
+}
+
+/* Estilos para centrar el diálogo del modal */
+.modal-dialog-centered {
+    display: flex;
+    align-items: center; 
+    min-height: calc(100% - 1.75rem); 
+}
+/* Fin de los estilos para el modal */
