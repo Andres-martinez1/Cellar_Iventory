@@ -97,6 +97,19 @@ body {
 
 
 
+/* Inicio de los estilos para el botón idioma */
+.btn-secondary1{
+    color: rgb(175, 169, 169);
+}
+
+/* Inicio de los efectos hover para el botón idioma*/
+.btn-secondary1:hover{
+    color: rgb(216, 214, 214);
+}
+/* Fin de los estilos para el botón idioma */
+
+
+
 /* Inicio de los estilos para el pie de página */
 footer {
     margin-top: 300px;
