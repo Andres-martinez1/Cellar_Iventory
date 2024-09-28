@@ -20,3 +20,19 @@ body{
     font-size: 1.5rem; 
 }
 /* Fin de los estilos para el título del encabezado de la tabla */
+
+
+
+/* Inicio de los estilos para el botón de agregar usuario */
+.btn-add-user {
+    background-color: #000000; 
+    color: white; 
+    border: none; 
+}
+
+/* Efectos hover para el botón de agregar usuario */
+.btn-add-user:hover {
+    background-color: #bebebe; 
+    color: rgb(0, 0, 0); 
+}
+/* Fin de los estilos para el botón de agregar usuario */
