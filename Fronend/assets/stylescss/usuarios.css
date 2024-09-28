@@ -56,3 +56,18 @@ body{
     min-height: calc(100% - 1.75rem); 
 }
 /* Fin de los estilos para el modal */
+
+
+
+/* Inicio de los estilos para el botón de cancelar */
+.btn-cancel {
+    background-color: #787878; 
+    color: #ffffff; 
+}
+
+/* Efectos hover para el botón de cancelar */
+.btn-cancel:hover {
+    background-color: #6c0000; 
+    color: rgb(255, 255, 255); 
+}
+/* Fin de los estilos para el botón de cancelar */
