@@ -3,3 +3,20 @@ body{
     background: linear-gradient(#ffffffdd, rgb(193, 189, 189));
 }
 /* Fin de los estilos generales para el body */
+
+
+
+/* Inicio de estilos de la tabla:Encabezado de la tabla */
+.table-header-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+/* Inicio de los estilos para el título del encabezado de la tabla */
+.table-header-container h3 {
+    margin: 0; 
+    font-size: 1.5rem; 
+}
+/* Fin de los estilos para el título del encabezado de la tabla */
