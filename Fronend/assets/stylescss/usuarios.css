@@ -71,3 +71,18 @@ body{
     color: rgb(255, 255, 255); 
 }
 /* Fin de los estilos para el botón de cancelar */
+
+
+
+/* Inicio de los estilos para el botón de confirmación */
+.btn-confirm {
+    background-color: #000000; 
+    color: white; 
+}
+
+/* Efectos hover para el botón de confirmación */
+.btn-confirm:hover {
+    background-color: #053b75; 
+    color: rgb(255, 255, 255); 
+}
+/* Fin de los estilos para el botón de confirmación */
