@@ -86,3 +86,20 @@ body{
     color: rgb(255, 255, 255); 
 }
 /* Fin de los estilos para el botón de confirmación */
+
+
+
+/* Inicio de los estilos para el botón de editar usuario */
+.btn-edit-user {
+    background-color: #7c7a7a; 
+    border-color: #7c7a7a; 
+    color: white; 
+}
+
+/* Efectos hover para el botón de editar usuario */
+.btn-edit-user:hover {
+    background-color: #045cbb;
+    border-color: #0370e6;
+    color: white; 
+}
+/* Fin de los estilos para el botón de editar usuario */
