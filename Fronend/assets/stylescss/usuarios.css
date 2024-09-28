@@ -120,3 +120,11 @@ body{
     color: white; 
 }
 /* Fin de los estilos para el botón de eliminar usuario */
+
+
+
+/* Inicio de los estilos para el footer */
+footer{
+    margin-top: 300px;
+}
+/* Fin de los estilos para el footer */
