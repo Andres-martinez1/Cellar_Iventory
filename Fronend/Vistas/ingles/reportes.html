@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellar Iventory</title>
+    <link rel="icon" href="/Fronend/assets/img/logo.png" type="img/png">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Fronend/assets/stylescss/styles.css">
+    <link rel="stylesheet" href="/Fronend/assets/stylescss/reportes.css">
+ 
+</head>
+<body>
+ 
+    <!-- Inicio de header -->
+    <!-- Barra de navegación en la parte superior -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+             <!-- Botón para abrir el menú lateral (offcanvas) con el logo -->
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
+            <img src="/Fronend/assets/img/logo.png" alt="Logo" style="width: 60px;"> 
+            </button>
+
+              <!-- Formulario de búsqueda -->
+            <form class="d-flex ms-5">
+                <input class="form-control search-bar" type="search" placeholder="Encontrar..." aria-label="Buscar">
+                <button class="btn btn-outline-light ms-2" type="submit">Ir</button>
+            </form>
+
+                <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item1">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                        <!-- Menú desplegable para seleccionar idioma -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary1 dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Idioma
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/Fronend/Vistas/ingles/index.html">English</a></li>
+                              <li><a class="dropdown-item" href="#">Frances</a></li>
+                              <li><a class="dropdown-item" href="#">Italiano</a></li>
+                            </ul>
+                          </div>
+
+
+                    <!-- Otros vínculos de navegación -->
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Bodegas</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Ayuda</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Proveedores</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="perfil.html"><img src="/Fronend/assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Fin de header -->
+
+
+
+<!-- Inicio de Menú lateral -->
+<!-- Menú lateral (offcanvas) que aparece al hacer clic en el logo -->
+<div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+
+        <!-- Botón para cerrar el menú -->
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Lista de enlaces del menú lateral -->
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="notificaciones.html"><i class="fas fa-bell me-2"></i> Notificaciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Estadísticas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="productos.html"><i class="fas fa-box me-2"></i> Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="usuarios.html"><i class="fas fa-users me-2"></i> Usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bodegas.html"><i class="fas fa-warehouse me-2"></i> Bodegas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reportes.html"><i class="fas fa-file-alt me-2"></i> Reportes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mb-50" href="perfil.html"><i class="fas fa-user me-2"></i> Perfil</a>
+            </li>
+            <li class="nav-itemlo">
+                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt me-2"></i> Cerrar sesión</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Fin de Menú lateral -->
+ 
+
+    <!-- Inicio de Contenido principal (reportes) -->
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="row">
+            <!-- Filtros -->
+            <div class="col-md-4 ">
+                <div class="card p-4 shadow-sm">
+                    <h5 class="card-title">Filtros</h5>
+
+                    <!-- Filtro Producto -->
+                    <div class="mb-3">
+                        <label for="filterProducto" class="form-label">Producto</label>
+                        <input type="text" id="filterProducto" class="form-control" placeholder="Ingresa el nombre del producto">
+                    </div>
+
+                    <!-- Filtro Bodega -->
+                    <div class="mb-3">
+                        <label for="filterBodega" class="form-label">Bodega</label>
+                        <input type="text" id="filterBodega" class="form-control" placeholder="Ingresa el número de bodega">
+                    </div>
+
+                    <!-- Botón para generar el reporte -->
+                    <button class="btn btn-custom w-100" data-bs-toggle="modal" data-bs-target="#reporteModal">Generar Reporte</button>
+                </div>
+            </div>
+
+            <!-- Tabla Resumen de Inventario -->
+            <div class="col-md-8">
+                <div class="card p-4 shadow-sm">
+                    <h5 class="card-title">Resumen de Inventario</h5>
+
+                    <!-- Tabla que muestra los datos de las bodegas -->
+
+                    <table class="table table-hover table-bordered" id="inventoryTable">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Bodega</th>
+                                <th>Cantidad</th>
+                                <th>Ubicación</th>
+                                <th>Fecha de Ingreso</th>
+                                <th>Proveedor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Producto A</td>
+                                <td>Bodega 1</td>
+                                <td>50</td>
+                                <td>Estantería 1, Fila 2</td>
+                                <td>2023-04-15</td>
+                                <td>Proveedor X</td>
+                            </tr>
+                            <tr>
+                                <td>Producto A</td>
+                                <td>Bodega 2</td>
+                                <td>25</td>
+                                <td>Estantería 3, Fila 1</td>
+                                <td>2023-02-28</td>
+                                <td>Proveedor Y</td>
+                            </tr>
+                            <tr>
+                                <td>Producto B</td>
+                                <td>Bodega 1</td>
+                                <td>75</td>
+                                <td>Estantería 2, Fila 3</td>
+                                <td>2023-06-01</td>
+                                <td>Proveedor X</td>
+                            </tr>
+                            <tr>
+                                <td>Producto B</td>
+                                <td>Bodega 3</td>
+                                <td>30</td>
+                                <td>Estantería 4, Fila 4</td>
+                                <td>2023-08-10</td>
+                                <td>Proveedor Z</td>
+                            </tr>
+                            <tr>
+                                <td>Producto C</td>
+                                <td>Bodega 2</td>
+                                <td>40</td>
+                                <td>Estantería 1, Fila 4</td>
+                                <td>2023-03-20</td>
+                                <td>Proveedor W</td>
+                            </tr>
+                            <tr>
+                                <td>Producto D</td>
+                                <td>Bodega 4</td>
+                                <td>15</td>
+                                <td>Estantería 3, Fila 2</td>
+                                <td>2023-07-22</td>
+                                <td>Proveedor X</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Contenido principal (reportes) -->
+
+
+    <!-- Inicio de Modal para generar reporte -->
+    <!-- Modal para generar reporte -->
+    <div class="modal fade" id="reporteModal" tabindex="-1" aria-labelledby="reporteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reporteModalLabel">Generar Reporte</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Deseas generar el reporte de inventario actual?
+                </div>
+                <div class="modal-footer">
+
+                    <!-- Botones para cancelar el proceso y descargar reportes (PDF O WORD) -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary1" id="downloadPDF">Descargar PDF</button>
+                    <button type="button" class="btn btn-primary" id="downloadWord">Descargar Word</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Modal para generar reporte -->
+
+
+    <script src="/Fronend/JS/reportes.js"></script>
+
+   
+<!-- Inicio de footer -->
+<footer>
+
+    <div class="container" class="margin-top">
+        <p>&copy; 2024 SENA. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!-- Fin de footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

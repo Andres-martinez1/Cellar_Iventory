@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellar Iventory</title>
+    <link rel="icon" href="/Fronend/assets/img/logo.png" type="img/png">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Fronend/assets/stylescss/styles.css">
+    <link rel="stylesheet" href="/Fronend/assets/stylescss/bodegas.css">
+ 
+</head>
+<body>
+
+    <!-- Inicio de header -->
+    <!-- Barra de navegación en la parte superior -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+             <!-- Botón para abrir el menú lateral (offcanvas) con el logo -->
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
+            <img src="/Fronend/assets/img/logo.png" alt="Logo" style="width: 60px;"> 
+            </button>
+
+              <!-- Formulario de búsqueda -->
+            <form class="d-flex ms-5">
+                <input class="form-control search-bar" type="search" placeholder="Encontrar..." aria-label="Buscar">
+                <button class="btn btn-outline-light ms-2" type="submit">Ir</button>
+            </form>
+
+                <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item1">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                        <!-- Menú desplegable para seleccionar idioma -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Idioma
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/Fronend/Vistas/ingles/index.html">English</a></li>
+                              <li><a class="dropdown-item" href="#">Frances</a></li>
+                              <li><a class="dropdown-item" href="#">Italiano</a></li>
+                            </ul>
+                          </div>
+
+
+                    <!-- Otros vínculos de navegación -->
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Bodegas</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Ayuda</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Proveedores</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="perfil.html"><img src="/Fronend/assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Fin de header -->
+
+
+<!-- Inicio de Menú lateral -->
+<!-- Menú lateral (offcanvas) que aparece al hacer clic en el logo -->
+<div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+
+        <!-- Botón para cerrar el menú -->
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Lista de enlaces del menú lateral -->
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="notificaciones.html"><i class="fas fa-bell me-2"></i> Notificaciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Estadísticas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="productos.html"><i class="fas fa-box me-2"></i> Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="usuarios.html"><i class="fas fa-users me-2"></i> Usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bodegas.html"><i class="fas fa-warehouse me-2"></i> Bodegas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reportes.html"><i class="fas fa-file-alt me-2"></i> Reportes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mb-50" href="perfil.html"><i class="fas fa-user me-2"></i> Perfil</a>
+            </li>
+            <li class="nav-itemlo">
+                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt me-2"></i> Cerrar sesión</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Fin de Menú lateral -->
+
+
+<!-- Inicio listado de bodegas -->
+<!-- Contenido principal: listado de bodegas -->
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Bodegas</h1>
+
+
+        <!-- Botón para abrir el modal  "Agregar Bodega" -->
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#agregarBodegaModal">Agregar Bodega</button>
+    </div>
+       
+
+    <!-- Sección de bodegas -->
+    <div class="row">
+        <div class="col-md-4">
+            <a class="nav-link" href="bodega.html" >
+                <div class="bodega-card p-3">
+                    <div class="bodega-img mb-3">
+                        <img src="/Fronend/assets/img/tic.jpg" alt="Bodega 1">
+                    </div>
+
+                    <!-- Bodega 1 -->
+                    <h3>TIC</h3>
+                    <p class="cont"> Las bodega de TIC alberga servidores, equipos de red y sistemas de almacenamiento.</p>
+                    <p><strong>A cargo de:</strong> Diego Calderon</p>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Bodega 2 -->
+        <div class="col-md-4">
+            <a class="nav-link"href="bodega2.html" >
+                <div class="bodega-card p-3">
+                    <div class="bodega-img mb-3">
+                        <img src="/Fronend/assets/img/cocina.jpg" alt="Bodega 2">
+                    </div>
+                    <h3>Gastronomía</h3>
+                    <p class="cont">La bodega de gastronomía guarda ingredientes asegurando la correcta calidad.</p>
+                    <p><strong>A cargo de:</strong> Jane Smith</p>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Bodega 3 -->
+        <div class="col-md-4">
+            <a class="nav-link"href="bodega3.html" >
+                <div class="bodega-card p-3">
+                    <div class="bodega-img mb-3">
+                        <img src="/Fronend/assets/img/pecuaria.jpg" alt="Bodega 3">
+                    </div>
+                    <h3>Agropecuaria</h3>
+                    <p class="cont">La bodega de agropecuaria almacena equipos para la producción agrícola y ganaderia.</p>
+                    <p><strong>A cargo de:</strong> Michael Johnson</p>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Bodega 4 -->
+        <div class="col-md-4">
+            <a class="nav-link"href="bodega4.html" >
+                <div class="bodega-card p-3">
+                    <div class="bodega-img mb-3">
+                        <img src="/Fronend/assets/img/cofi.jpg" alt="Bodega 4">
+                    </div>
+                    <h3>Escula Nacional del Café</h3>
+                    <p class="cont">La bodega de la escuela nacional del café almacena granos de café y utensilios de preparación.</p>
+                    <p><strong>A cargo de:</strong> Sarah Lee</p>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Bodega 5 -->
+        <div class="col-md-4">
+            <a class="nav-link"href="bodega5.html" >
+                <div class="bodega-card p-3">
+                    <div class="bodega-img mb-3">
+                        <img src="/Fronend/assets/img/agro.jpg"  alt="Bodega 5">
+                    </div>
+                    <h3>Agroindustria</h3>
+                    <p class="cont">Las bodegas de agroindustria almacena materias primas, materiales agrícolas e industriales.</p>
+                    <p><strong>A cargo de:</strong> Paul Walker</p>
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Bodega 6 -->
+        <div class="col-md-4">
+            <a class="nav-link"href="bodega6.html" >
+                <div class="bodega-card p-3">
+                    <div class="bodega-img mb-3">
+                        <img src="/Fronend/assets/img/maiz.jpg" alt="Bodega 6">
+                    </div>
+                    <h3>Agrícola</h3>
+                    <p class="cont">Las bodegas agrícola almacena semillas, fertilizantes,y disponibilidad.</p>
+                    <p><strong>A cargo de:</strong> Anna Taylor</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Fin listado de bodegas -->
+
+
+<!-- Inicio Modal para agregar una nueva bodega -->
+<!-- Modal para agregar una nueva bodega -->
+<div class="modal fade" id="agregarBodegaModal" tabindex="-1" aria-labelledby="agregarBodegaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="agregarBodegaModalLabel">Agregar Bodega</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                 <!-- Campos para ingresar detalles de la nueva bodega -->
+                <form>
+                    <div class="mb-3">
+                        <label for="fotoBodega" class="form-label">Foto</label>
+                        <input type="file" class="form-control" id="fotoBodega">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombreBodega" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombreBodega">
+                    </div>
+                    <div class="mb-3">
+                        <label for="descripcionBodega" class="form-label">Descripción</label>
+                        <textarea class="form-control" id="descripcionBodega"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="direccionBodega" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccionBodega">
+                    </div>
+                    <div class="mb-3">
+                        <label for="personaACargo" class="form-label">A cargo de</label>
+                        <input type="text" class="form-control" id="personaACargo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="otrosDetalles" class="form-label">Otros Detalles</label>
+                        <textarea class="form-control" id="otrosDetalles"></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Botón para cerrar el modal y botón para agregar la bodega -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-2" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-1">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Modal para agregar una nueva bodega -->
+
+
+    <!-- Inicio de Pie de página -->
+    <!-- Pie de página -->
+    <nav  aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="bodegas.html"><i class="fas fa-chevron-left"></i>Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="bodegas.html">1</a></li>
+            <li class="page-item "><a class="page-link" href="bodegas1.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">67</a></li>
+            <li class="page-item"><a class="page-link" href="#">68</a></li>
+            <li class="page-item"><a class="page-link" href="bodegas1.html">Next <i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+    </nav>
+</div>
+<!-- Fin de Pie de página -->
+
+
+<!-- Inicio de footer -->
+<footer>
+
+    <div class="container" class="margin-top">
+        <p>&copy; 2024 SENA. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!-- Fin de footer -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

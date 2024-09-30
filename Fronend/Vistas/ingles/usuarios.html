@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellar Iventory</title>
+    <link rel="icon" href="/Fronend/assets/img/logo.png" type="img/png">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Fronend/assets/stylescss/styles.css">
+    <link rel="stylesheet" href="/Fronend/assets/stylescss/usuarios.css">
+ 
+</head>
+<body>
+ 
+    <!-- Inicio de header -->
+    <!-- Barra de navegación en la parte superior -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+             <!-- Botón para abrir el menú lateral (offcanvas) con el logo -->
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
+            <img src="/Fronend/assets/img/logo.png" alt="Logo" style="width: 60px;"> 
+            </button>
+
+              <!-- Formulario de búsqueda -->
+            <form class="d-flex ms-5">
+                <input class="form-control search-bar" type="search" placeholder="Encontrar..." aria-label="Buscar">
+                <button class="btn btn-outline-light ms-2" type="submit">Ir</button>
+            </form>
+
+                <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item1">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                        <!-- Menú desplegable para seleccionar idioma -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Idioma
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/Fronend/Vistas/ingles/index.html">English</a></li>
+                              <li><a class="dropdown-item" href="#">Frances</a></li>
+                              <li><a class="dropdown-item" href="#">Italiano</a></li>
+                            </ul>
+                          </div>
+
+
+                    <!-- Otros vínculos de navegación -->
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Bodegas</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Ayuda</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Proveedores</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="perfil.html"><img src="/Fronend/assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Fin de header -->
+
+
+
+<!-- Inicio de Menú lateral -->
+<!-- Menú lateral (offcanvas) que aparece al hacer clic en el logo -->
+<div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+
+        <!-- Botón para cerrar el menú -->
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- Lista de enlaces del menú lateral -->
+    <div class="offcanvas-body">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="notificaciones.html"><i class="fas fa-bell me-2"></i> Notificaciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Estadísticas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="productos.html"><i class="fas fa-box me-2"></i> Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="usuarios.html"><i class="fas fa-users me-2"></i> Usuarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bodegas.html"><i class="fas fa-warehouse me-2"></i> Bodegas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="reportes.html"><i class="fas fa-file-alt me-2"></i> Reportes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mb-50" href="perfil.html"><i class="fas fa-user me-2"></i> Perfil</a>
+            </li>
+            <li class="nav-itemlo">
+                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt me-2"></i> Cerrar sesión</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Fin de Menú lateral -->
+
+
+    <!-- Inicio de Contenido principal de usuarios-->
+    <!-- Contenido principal (Tabla de datos de usuarios) -->
+    <div class="container mt-5">
+      
+        <div class="card">
+            <div class="card-body">
+               
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3>Usuarios</h3>
+
+                    
+                    <!-- Botón para añadir usuarios -->
+                    <button class="btn btn-add-user" data-bs-toggle="modal" data-bs-target="#addUserModal">+ Añadir Usuario</button>
+                </div>
+
+                <!-- Barra de búsqueda dentro de la tabla -->
+                <p class="text-muted">Gestiona tus usuarios</p>
+                <input id="buscarUsuarios" class="form-control mb-3" type="search" placeholder="Encontrar..." aria-label="Buscar">
+
+                <!-- Tabla que muestra los datos de los usuarios -->
+                <table id="tablaUsuarios"  class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Email</th>
+                            <th>Rol</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+               
+                        <tr>
+                            <td>Juan</td>
+                            <td>Pérez</td>
+                            <td>juan@example.com</td>
+                            <td>Administrador</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-1">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-1">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ana</td>
+                            <td>Gómez</td>
+                            <td>ana@example.com</td>
+                            <td>Lider</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-2">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-2">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pedro</td>
+                            <td>Martínez</td>
+                            <td>pedro@example.com</td>
+                            <td>Instructor</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-3">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-3">Eliminar</button>
+                            </td>
+                        </tr>
+                   
+                        <tr>
+                            <td>Laura</td>
+                            <td>Fernández</td>
+                            <td>laura@example.com</td>
+                            <td>Aprendiz</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-4">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-4">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>López</td>
+                            <td>carlos@example.com</td>
+                            <td>Lider</td>
+                            <td>
+
+                                <!-- Botones para editar y eliminar registros -->
+                                <button class="btn btn-edit-user" data-bs-toggle="modal" data-bs-target="#editUserModal-5">Editar</button>
+                                <button class="btn btn-delete-user" data-bs-toggle="modal" data-bs-target="#deleteUserModal-5">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Contenido principal de usuarios-->
+
+
+    <!-- Inicio de Modal para Añadir Usuario -->
+    <!-- Modal para Añadir Usuario -->
+    <div class="modal fade" id="addUserModal" tabindex="-1" aria-labelledby="addUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addUserModalLabel">Añadir Usuario</h5>
+
+                    <!-- Botones para cerrar el modal-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Introduce los detalles para añadir un nuevo usuario.</p>
+
+                    <!-- Inicio de formulario para añadir nuevo usuario -->
+                    <!-- formulario para añadir nuevo usuario -->
+                    <form>
+
+                        <!-- Campo para agregar el nombre -->
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Introduce el nombre">
+                        </div>
+
+                        <!-- Campo para agregar el Apellido -->
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Introduce el apellido">
+                        </div>
+
+                        <!-- Campo para agregar la Identificacción -->
+                        <div class="mb-3">
+                            <label for="userName" class="form-label">Identificacion</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Introduce la identificacion">
+                        </div>
+
+                        <!-- Campo para agregar el Email -->
+                        <div class="mb-3">
+                            <label for="userEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="Introduce el email">
+                        </div>
+
+                        <!-- Campo para agregar el rol -->
+                        <div class="mb-3">
+                            <label for="userRole" class="form-label">Rol</label>
+                            <select class="form-select" id="userRole">
+                                <option selected>Seleccionar rol</option>
+                                <option value="admin">Administrador</option>
+                                <option value="admin">Instructor</option>
+                                <option value="editor">Lider</option>
+                                <option value="user">Aprendiz</option>
+                            </select>
+                        </div>
+                    </form>
+                    <!-- formulario para añadir nuevo usuario -->
+                </div>
+                <div class="modal-footer">
+
+                    <!-- Botones para cancelar  y confirmar -->
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Modal para editar perfil -->
+
+
+    <!-- Inicio de Modal para editar detalles del usuario. -->
+    <!-- Modal para editar detalles del usuario. -->
+    <div class="modal fade" id="editUserModal-1" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editUserModalLabel">Editar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Edita los detalles del usuario.</p>
+
+                    <!-- Inicio de formulario para editar detalles del usuario -->
+                    <!-- formulario para editar detalles del usuario -->
+                    <form>
+
+                        <!-- Campo para editar el nombre -->
+                        <div class="mb-3">
+                            <label for="editUserName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="editUserName" value="Juan Pérez">
+                        </div>
+
+                        <!-- Campo para agregar el Email -->
+                        <div class="mb-3">
+                            <label for="editUserEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editUserEmail" value="juan@example.com">
+                        </div>
+
+                        <!-- Campo para agregar el rol -->
+                        <div class="mb-3">
+                            <label for="editUserRole" class="form-label">Rol</label>
+                            <select class="form-select" id="editUserRole">
+                                <option selected>Seleccionar rol</option>
+                                <option value="admin">Administrador</option>
+                                <option value="admin">Instructor</option>
+                                <option value="editor">Lider</option>
+                                <option value="user">Aprendiz</option>
+                            </select>
+                        </div>
+                    </form>
+                    <!-- Fin de formulario para editar detalles del usuario -->
+                </div>
+
+                <!-- Botones para cancelar  y guardar cambios -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Modal para editar detalles del usuario. -->
+
+       
+    <!-- Inicio de Modal para Eliminar Usuario -->
+    <!-- Modal para Eliminar Usuario -->
+    <div class="modal fade" id="deleteUserModal-1" tabindex="-1" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">¿Estás seguro de que deseas eliminar a Juan Pérez?</p>
+                </div>
+                <div class="modal-footer">
+
+                    <!-- Botones para Cancelar  y Eliminar -->
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Modal para Eliminar Usuario -->
+
+
+    <!-- Inicio de Modal para editar detalles del usuario. -->
+    <!-- Modal para editar detalles del usuario. -->
+    <div class="modal fade" id="editUserModal-2" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editUserModalLabel">Editar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Edita los detalles del usuario.</p>
+
+                    <!-- Inicio de formulario para editar detalles del usuario -->
+                    <!-- formulario para editar detalles del usuario -->
+                    <form>
+
+                        <!-- Campo para editar el nombre -->
+                        <div class="mb-3">
+                            <label for="editUserName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="editUserName" value="Juan Pérez">
+                        </div>
+
+                        <!-- Campo para agregar el Email -->
+                        <div class="mb-3">
+                            <label for="editUserEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editUserEmail" value="juan@example.com">
+                        </div>
+
+                        <!-- Campo para agregar el rol -->
+                        <div class="mb-3">
+                            <label for="editUserRole" class="form-label">Rol</label>
+                            <select class="form-select" id="editUserRole">
+                                <option selected>Seleccionar rol</option>
+                                <option value="admin">Administrador</option>
+                                <option value="admin">Instructor</option>
+                                <option value="editor">Lider</option>
+                                <option value="user">Aprendiz</option>
+                            </select>
+                        </div>
+                    </form>
+                    <!-- Fin de formulario para editar detalles del usuario -->
+                </div>
+
+                <!-- Botones para cancelar  y guardar cambios -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Modal para editar detalles del usuario. -->
+
+
+    <!-- Inicio de Modal para Eliminar Usuario -->
+    <!-- Modal para Eliminar Usuario -->
+    <div class="modal fade" id="deleteUserModal-2" tabindex="-1" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">¿Estás seguro de que deseas eliminar a Juan Pérez?</p>
+                </div>
+                <div class="modal-footer">
+
+                    <!-- Botones para Cancelar  y Eliminar -->
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Fin de Modal para Eliminar Usuario -->
+    
+
+    <!-- Inicio de Modal para editar detalles del usuario. -->
+    <!-- Modal para editar detalles del usuario. -->
+    <div class="modal fade" id="editUserModal-3" tabindex="-3" aria-labelledby="editUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editUserModalLabel">Editar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Edita los detalles del usuario.</p>
+
+                    <!-- Inicio de formulario para editar detalles del usuario -->
+                    <!-- formulario para editar detalles del usuario -->
+                    <form>
+
+                        <!-- Campo para editar el nombre -->
+                        <div class="mb-3">
+                            <label for="editUserName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="editUserName" value="Juan Pérez">
+                        </div>
+
+                        <!-- Campo para agregar el Email -->
+                        <div class="mb-3">
+                            <label for="editUserEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editUserEmail" value="juan@example.com">
+                        </div>
+
+                        <!-- Campo para agregar el rol -->
+                        <div class="mb-3">
+                            <label for="editUserRole" class="form-label">Rol</label>
+                            <select class="form-select" id="editUserRole">
+                                <option selected>Seleccionar rol</option>
+                                <option value="admin">Administrador</option>
+                                <option value="admin">Instructor</option>
+                                <option value="editor">Lider</option>
+                                <option value="user">Aprendiz</option>
+                            </select>
+                        </div>
+                    </form>
+                    <!-- Fin de formulario para editar detalles del usuario -->
+                </div>
+
+                <!-- Botones para cancelar  y guardar cambios -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Modal para editar detalles del usuario. -->
+
+
+    <!-- Inicio de Modal para Eliminar Usuario -->
+    <!-- Modal para Eliminar Usuario -->
+    <div class="modal fade" id="deleteUserModal-3" tabindex="-1" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">¿Estás seguro de que deseas eliminar a Juan Pérez?</p>
+                </div>
+                <div class="modal-footer">
+
+                    <!-- Botones para Cancelar  y Eliminar -->
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Fin de Modal para Eliminar Usuario -->
+    
+ 
+    <!-- Inicio de Modal para editar detalles del usuario. -->
+    <!-- Modal para editar detalles del usuario. -->
+    <div class="modal fade" id="editUserModal-4" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editUserModalLabel">Editar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Edita los detalles del usuario.</p>
+
+                    <!-- Inicio de formulario para editar detalles del usuario -->
+                    <!-- formulario para editar detalles del usuario -->
+                    <form>
+
+                        <!-- Campo para editar el nombre -->
+                        <div class="mb-3">
+                            <label for="editUserName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="editUserName" value="Juan Pérez">
+                        </div>
+
+                        <!-- Campo para agregar el Email -->
+                        <div class="mb-3">
+                            <label for="editUserEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editUserEmail" value="juan@example.com">
+                        </div>
+
+                        <!-- Campo para agregar el rol -->
+                        <div class="mb-3">
+                            <label for="editUserRole" class="form-label">Rol</label>
+                            <select class="form-select" id="editUserRole">
+                                <option selected>Seleccionar rol</option>
+                                <option value="admin">Administrador</option>
+                                <option value="admin">Instructor</option>
+                                <option value="editor">Lider</option>
+                                <option value="user">Aprendiz</option>
+                            </select>
+                        </div>
+                    </form>
+                    <!-- Fin de formulario para editar detalles del usuario -->
+                </div>
+
+                <!-- Botones para cancelar  y guardar cambios -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Modal para editar detalles del usuario. -->
+
+
+    <!-- Inicio de Modal para Eliminar Usuario -->
+    <!-- Modal para Eliminar Usuario -->
+    <div class="modal fade" id="deleteUserModal-4" tabindex="-1" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">¿Estás seguro de que deseas eliminar a Juan Pérez?</p>
+                </div>
+                <div class="modal-footer">
+
+                    <!-- Botones para Cancelar  y Eliminar -->
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Fin de Modal para Eliminar Usuario -->
+    
+
+   
+    <!-- Inicio de Modal para editar detalles del usuario. -->
+    <!-- Modal para editar detalles del usuario. -->
+    <div class="modal fade" id="editUserModal-5" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editUserModalLabel">Editar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">Edita los detalles del usuario.</p>
+
+                    <!-- Inicio de formulario para editar detalles del usuario -->
+                    <!-- formulario para editar detalles del usuario -->
+                    <form>
+
+                        <!-- Campo para editar el nombre -->
+                        <div class="mb-3">
+                            <label for="editUserName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="editUserName" value="Juan Pérez">
+                        </div>
+
+                        <!-- Campo para agregar el Email -->
+                        <div class="mb-3">
+                            <label for="editUserEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="editUserEmail" value="juan@example.com">
+                        </div>
+
+                        <!-- Campo para agregar el rol -->
+                        <div class="mb-3">
+                            <label for="editUserRole" class="form-label">Rol</label>
+                            <select class="form-select" id="editUserRole">
+                                <option selected>Seleccionar rol</option>
+                                <option value="admin">Administrador</option>
+                                <option value="admin">Instructor</option>
+                                <option value="editor">Lider</option>
+                                <option value="user">Aprendiz</option>
+                            </select>
+                        </div>
+                    </form>
+                    <!-- Fin de formulario para editar detalles del usuario -->
+                </div>
+
+                <!-- Botones para cancelar  y guardar cambios -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Modal para editar detalles del usuario. -->
+
+
+    <!-- Inicio de Modal para Eliminar Usuario -->
+    <!-- Modal para Eliminar Usuario -->
+    <div class="modal fade" id="deleteUserModal-5" tabindex="-1" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteUserModalLabel">Eliminar Usuario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted">¿Estás seguro de que deseas eliminar a Juan Pérez?</p>
+                </div>
+                <div class="modal-footer">
+
+                    <!-- Botones para Cancelar  y Eliminar -->
+                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-confirm">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Fin de Modal para Eliminar Usuario -->
+    
+
+    <script src="/Fronend/JS/usuarios.js"></script>
+
+
+<!-- Inicio de footer -->
+<footer>
+
+    <div class="container" class="margin-top">
+        <p>&copy; 2024 SENA. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<!-- Fin de footer -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    

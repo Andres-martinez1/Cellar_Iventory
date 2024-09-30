@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellar Inventory</title>
+    <link rel="icon" href="../../assets/img/logo.png" type="img/png">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/stylescss/styles.css">
+    <link rel="stylesheet" href="../../assets/stylescss/bodega.css">
+ 
+</head>
+<body>
+  
+    <!-- Inicio de header -->
+    <!-- Top navigation bar -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          
+            <!-- Button to open the side menu (offcanvas) with the logo -->
+            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
+                <img src="../../assets/img/logo.png" alt="Logo" style="width: 60px;"> 
+            </button>
+
+            <!-- Search form -->
+            <form class="d-flex ms-5">
+                <input class="form-control search-bar" type="search" placeholder="Find..." aria-label="Search">
+                <button class="btn btn-outline-light ms-2" type="submit">Go</button>
+            </form>
+
+            <!-- Additional navigation (collapsed on small screens) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item1">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Dropdown menu for selecting language -->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../Vistas/ingles/index.html">English</a></li>
+                            <li><a class="dropdown-item" href="#">French</a></li>
+                            <li><a class="dropdown-item" href="#">Italian</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Other navigation links -->
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Cellars</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                    <li class="nav-item1">
+                        <a class="nav-link" href="#">Suppliers</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="perfil.html"><img src="../../assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Fin de header -->
+
+
+    <!-- Inicio de Menú lateral -->
+    <!-- Side menu (offcanvas) that appears when clicking the logo -->
+    <div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+
+            <!-- Button to close the menu -->
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- List of links in the side menu -->
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="notificaciones.html"><i class="fas fa-bell me-2"></i> Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Statistics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html"><i class="fas fa-box me-2"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usuarios.html"><i class="fas fa-users me-2"></i> Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bodegas.html"><i class="fas fa-warehouse me-2"></i> Cellars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reportes.html"><i class="fas fa-file-alt me-2"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-50" href="perfil.html"><i class="fas fa-user me-2"></i> Profile</a>
+                </li>
+                <li class="nav-itemlo">
+                    <a class="nav-link" href="login.html"><i class="fas fa-sign-out-alt me-2"></i> Log out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Fin de Menú lateral -->
+
+
+    <!-- Inicio Sección Principal de la Bodega -->
+    <!-- Main section of the Cellar -->
+    <div class="container">
+        <div class="main-bodega">
+            <img src="../../assets/img/tic.jpg">
+            <h3>TIC</h3>
+            <p>The TIC cellar houses servers, networking equipment, and storage systems essential for managing and securing technology infrastructure.</p>
+        </div>
+
+        <!-- Title of the Products Section -->
+        <h4>Products in this cellar</h4>
+
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 product-card">
+                <a href="producto.html">
+                    <div class="card">
+                        <img src="../../assets/img/co.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">UltraBook Pro Laptop</h5>
+                            <p class="card-text">Powerful laptop with the latest generation processor.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-badge in-stock">In stock</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4 product-card">
+                <a href="#">
+                    <div class="card">
+                        <img src="../../assets/img/cel.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Galaxy X Smartphone</h5>
+                            <p class="card-text">High-end smartphone with a 108MP camera and AMOLED display.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-badge in-stock">In stock</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4 product-card">
+                <a href="#">
+                    <div class="card">
+                        <img src="../../assets/img/ta.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">CreativeTab Tablet</h5>
+                            <p class="card-text">Perfect tablet for digital artists with a high-precision pen.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-badge out-of-stock">Out of stock</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4 product-card">
+                <a href="#">
+                    <div class="card">
+                        <img src="../../assets/img/re.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">FitPro Smartwatch</h5>
+                            <p class="card-text">Smartwatch with advanced health and fitness monitoring.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-badge in-stock">In stock</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-4 product-card">
+                <a href="#">
+                    <div class="card">
+                        <img src="../../assets/img/au.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">NoiseGuard Headphones</h5>
+                            <p class="card-text">Wireless headphones with active noise cancellation.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-badge in-stock">In stock</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-4 product-card">
+                <a href="#">
+                    <div class="card">
+                        <img src="../../assets/img/cam.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">MirrorPro Camera</h5>
+                            <p class="card-text">High-resolution mirrorless camera for professional photographers.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span class="status-badge in-stock">In stock</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Fin Sección Principal de la Bodega -->
+
+
+    <!-- Pagination -->
+    <nav aria-label="Page navigation" class="mt-4">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-chevron-left"></i>Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="./index.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="./1.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">67</a></li>
+            <li class="page-item"><a class="page-link" href="#">68</a></li>
+            <li class="page-item"><a class="page-link" href="./1.html">Next <i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+    </nav>
+    <!-- End Pagination -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container margin-top">
+            <p>&copy; 2024 SENA. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
