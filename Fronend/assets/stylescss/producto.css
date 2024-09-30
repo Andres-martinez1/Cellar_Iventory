@@ -74,6 +74,11 @@
     color: #646464;
 }
 
+.cant{
+    margin-right: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+}
 .truck-button {
     margin-left: 100px;
     --color: #fff;
