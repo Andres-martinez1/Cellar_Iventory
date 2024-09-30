@@ -15,103 +15,86 @@
 </head>
 <body>
 
-    <!-- Inicio de header -->
-    <!-- Barra de navegación en la parte superior -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           
-             <!-- Botón para abrir el menú lateral (offcanvas) con el logo -->
             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
-            <img src="/Fronend/assets/img/logo.png" alt="Logo" style="width: 60px;"> 
+                <img src="../../assets/img/logo.png" alt="Logo" style="width: 60px;">
             </button>
-
-              <!-- Formulario de búsqueda -->
             <form class="d-flex ms-5">
-                <input class="form-control search-bar" type="search" placeholder="Encontrar..." aria-label="Buscar">
-                <button class="btn btn-outline-light ms-2" type="submit">Ir</button>
+                <input class="form-control search-bar" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-outline-light ms-2" type="submit">Go</button>
             </form>
-
-                <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item1">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-
-                        <!-- Menú desplegable para seleccionar idioma -->
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Idioma
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/Fronend/Vistas/ingles/index.html">English</a></li>
-                              <li><a class="dropdown-item" href="#">Frances</a></li>
-                              <li><a class="dropdown-item" href="#">Italiano</a></li>
-                            </ul>
-                          </div>
-
-
-                    <!-- Otros vínculos de navegación -->
+    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                          <li><a class="dropdown-item" href="/Fronend/Vistas/index.html">Spanish</a></li>
+                          <li><a class="dropdown-item" href="#">French</a></li>
+                          <li><a class="dropdown-item" href="#">Italian</a></li>
+                        </ul>
+                    </div>
+    
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Bodegas</a>
+                        <a class="nav-link" href="#">Warehouses</a>
                     </li>
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Ayuda</a>
+                        <a class="nav-link" href="#">Help</a>
                     </li>
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Proveedores</a>
+                        <a class="nav-link" href="#">Suppliers</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="perfil.html"><img src="/Fronend/assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
+                        <a class="nav-link" href="profile.html"><img src="../../assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <!-- Fin de header -->
-
-
-<!-- Inicio de Menú lateral -->
-<!-- Menú lateral (offcanvas) que aparece al hacer clic en el logo -->
-<div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
-
-        <!-- Botón para cerrar el menú -->
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+    <div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/notificaciones.html"><i class="fas fa-bell me-2"></i> Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Statistics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/productos.html"><i class="fas fa-box me-2"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/usuarios.html"><i class="fas fa-users me-2"></i> Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/bodegas.html"><i class="fas fa-warehouse me-2"></i> Warehouses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/reportes.html"><i class="fas fa-file-alt me-2"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-50" href="../ingles/perfil.html"><i class="fas fa-user me-2"></i> Profile</a>
+                </li>
+                <li class="nav-itemlo">
+                    <a class="nav-link" href="../ingles/log.html"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <!-- Lista de enlaces del menú lateral -->
-    <div class="offcanvas-body">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="notificaciones.html"><i class="fas fa-bell me-2"></i> Notificaciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Estadísticas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productos.html"><i class="fas fa-box me-2"></i> Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="usuarios.html"><i class="fas fa-users me-2"></i> Usuarios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="bodegas.html"><i class="fas fa-warehouse me-2"></i> Bodegas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="reportes.html"><i class="fas fa-file-alt me-2"></i> Reportes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mb-50" href="perfil.html"><i class="fas fa-user me-2"></i> Perfil</a>
-            </li>
-            <li class="nav-itemlo">
-                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt me-2"></i> Cerrar sesión</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- Fin de Menú lateral -->
+    
 
 
 <!-- Inicio listado de bodegas -->
@@ -122,7 +105,7 @@
 
 
         <!-- Botón para abrir el modal  "Agregar Bodega" -->
-        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#agregarBodegaModal">Agregar Bodega</button>
+        <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#agregarBodegaModal">Add Winery</button>
     </div>
        
 
@@ -137,8 +120,8 @@
 
                     <!-- Bodega 1 -->
                     <h3>TIC</h3>
-                    <p class="cont"> Las bodega de TIC alberga servidores, equipos de red y sistemas de almacenamiento.</p>
-                    <p><strong>A cargo de:</strong> Diego Calderon</p>
+                    <p class="cont"> The ICT warehouse houses servers, network equipment, and storage systems.</p>
+                    <p><strong>By Of:</strong> Diego Calderon</p>
                 </div>
             </a>
         </div>
@@ -151,9 +134,9 @@
                     <div class="bodega-img mb-3">
                         <img src="/Fronend/assets/img/cocina.jpg" alt="Bodega 2">
                     </div>
-                    <h3>Gastronomía</h3>
-                    <p class="cont">La bodega de gastronomía guarda ingredientes asegurando la correcta calidad.</p>
-                    <p><strong>A cargo de:</strong> Jane Smith</p>
+                    <h3>Gastronomy</h3>
+                    <p class="cont">The gastronomy cellar keeps ingredients ensuring the correct quality.</p>
+                    <p><strong>By Of:</strong> Jane Smith</p>
                 </div>
             </a>
         </div>
@@ -166,9 +149,9 @@
                     <div class="bodega-img mb-3">
                         <img src="/Fronend/assets/img/pecuaria.jpg" alt="Bodega 3">
                     </div>
-                    <h3>Agropecuaria</h3>
-                    <p class="cont">La bodega de agropecuaria almacena equipos para la producción agrícola y ganaderia.</p>
-                    <p><strong>A cargo de:</strong> Michael Johnson</p>
+                    <h3>agropecuary</h3>
+                    <p class="cont">The agricultural warehouse stores equipment for agricultural and livestock production.</p>
+                    <p><strong>By Of:</strong> Michael Johnson</p>
                 </div>
             </a>
         </div>
@@ -181,9 +164,9 @@
                     <div class="bodega-img mb-3">
                         <img src="/Fronend/assets/img/cofi.jpg" alt="Bodega 4">
                     </div>
-                    <h3>Escula Nacional del Café</h3>
-                    <p class="cont">La bodega de la escuela nacional del café almacena granos de café y utensilios de preparación.</p>
-                    <p><strong>A cargo de:</strong> Sarah Lee</p>
+                    <h3>National Coffee School</h3>
+                    <p class="cont">The cellar of the national coffee school stores coffee beans and preparation utensils.</p>
+                    <p><strong>By Of:</strong> Sarah Lee</p>
                 </div>
             </a>
         </div>
@@ -196,9 +179,9 @@
                     <div class="bodega-img mb-3">
                         <img src="/Fronend/assets/img/agro.jpg"  alt="Bodega 5">
                     </div>
-                    <h3>Agroindustria</h3>
-                    <p class="cont">Las bodegas de agroindustria almacena materias primas, materiales agrícolas e industriales.</p>
-                    <p><strong>A cargo de:</strong> Paul Walker</p>
+                    <h3>Agroindustry</h3>
+                    <p class="cont">Agribusiness warehouses store raw materials, agricultural and industrial materials..</p>
+                    <p><strong>By Of:</strong> Paul Walker</p>
                 </div>
             </a>
         </div>
@@ -212,8 +195,8 @@
                         <img src="/Fronend/assets/img/maiz.jpg" alt="Bodega 6">
                     </div>
                     <h3>Agrícola</h3>
-                    <p class="cont">Las bodegas agrícola almacena semillas, fertilizantes,y disponibilidad.</p>
-                    <p><strong>A cargo de:</strong> Anna Taylor</p>
+                    <p class="cont">Agricultural warehouses store seeds, fertilizers, and availability.</p>
+                    <p><strong>By Of:</strong> Anna Taylor</p>
                 </div>
             </a>
         </div>
@@ -228,7 +211,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="agregarBodegaModalLabel">Agregar Bodega</h5>
+                <h5 class="modal-title" id="agregarBodegaModalLabel">Add Winery</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -236,27 +219,27 @@
                  <!-- Campos para ingresar detalles de la nueva bodega -->
                 <form>
                     <div class="mb-3">
-                        <label for="fotoBodega" class="form-label">Foto</label>
+                        <label for="fotoBodega" class="form-label">Photo</label>
                         <input type="file" class="form-control" id="fotoBodega">
                     </div>
                     <div class="mb-3">
-                        <label for="nombreBodega" class="form-label">Nombre</label>
+                        <label for="nombreBodega" class="form-label">Name</label>
                         <input type="text" class="form-control" id="nombreBodega">
                     </div>
                     <div class="mb-3">
-                        <label for="descripcionBodega" class="form-label">Descripción</label>
+                        <label for="descripcionBodega" class="form-label">Description</label>
                         <textarea class="form-control" id="descripcionBodega"></textarea>
                     </div>
                     <div class="mb-3">
-                        <label for="direccionBodega" class="form-label">Dirección</label>
+                        <label for="direccionBodega" class="form-label">Address</label>
                         <input type="text" class="form-control" id="direccionBodega">
                     </div>
                     <div class="mb-3">
-                        <label for="personaACargo" class="form-label">A cargo de</label>
+                        <label for="personaACargo" class="form-label">By</label>
                         <input type="text" class="form-control" id="personaACargo">
                     </div>
                     <div class="mb-3">
-                        <label for="otrosDetalles" class="form-label">Otros Detalles</label>
+                        <label for="otrosDetalles" class="form-label">Other Details</label>
                         <textarea class="form-control" id="otrosDetalles"></textarea>
                     </div>
                 </form>
@@ -264,8 +247,8 @@
 
             <!-- Botón para cerrar el modal y botón para agregar la bodega -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-2" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-1">Guardar</button>
+                <button type="button" class="btn btn-2" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-1">Save</button>
             </div>
         </div>
     </div>

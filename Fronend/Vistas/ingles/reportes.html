@@ -15,105 +15,85 @@
 </head>
 <body>
  
-    <!-- Inicio de header -->
-    <!-- Barra de navegación en la parte superior -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           
-             <!-- Botón para abrir el menú lateral (offcanvas) con el logo -->
             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
-            <img src="/Fronend/assets/img/logo.png" alt="Logo" style="width: 60px;"> 
+                <img src="../../assets/img/logo.png" alt="Logo" style="width: 60px;">
             </button>
-
-              <!-- Formulario de búsqueda -->
             <form class="d-flex ms-5">
-                <input class="form-control search-bar" type="search" placeholder="Encontrar..." aria-label="Buscar">
-                <button class="btn btn-outline-light ms-2" type="submit">Ir</button>
+                <input class="form-control search-bar" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-outline-light ms-2" type="submit">Go</button>
             </form>
-
-                <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item1">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-
-                        <!-- Menú desplegable para seleccionar idioma -->
-                        <div class="dropdown">
-                            <button class="btn btn-secondary1 dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Idioma
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/Fronend/Vistas/ingles/index.html">English</a></li>
-                              <li><a class="dropdown-item" href="#">Frances</a></li>
-                              <li><a class="dropdown-item" href="#">Italiano</a></li>
-                            </ul>
-                          </div>
-
-
-                    <!-- Otros vínculos de navegación -->
+    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                          <li><a class="dropdown-item" href="/Fronend/Vistas/index.html">Spanish</a></li>
+                          <li><a class="dropdown-item" href="#">French</a></li>
+                          <li><a class="dropdown-item" href="#">Italian</a></li>
+                        </ul>
+                    </div>
+    
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Bodegas</a>
+                        <a class="nav-link" href="#">Warehouses</a>
                     </li>
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Ayuda</a>
+                        <a class="nav-link" href="#">Help</a>
                     </li>
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Proveedores</a>
+                        <a class="nav-link" href="#">Suppliers</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="perfil.html"><img src="/Fronend/assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
+                        <a class="nav-link" href="profile.html"><img src="../../assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <!-- Fin de header -->
-
-
-
-<!-- Inicio de Menú lateral -->
-<!-- Menú lateral (offcanvas) que aparece al hacer clic en el logo -->
-<div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
-
-        <!-- Botón para cerrar el menú -->
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+    <div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/notificaciones.html"><i class="fas fa-bell me-2"></i> Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Statistics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/productos.html"><i class="fas fa-box me-2"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/usuarios.html"><i class="fas fa-users me-2"></i> Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/bodegas.html"><i class="fas fa-warehouse me-2"></i> Warehouses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/reportes.html"><i class="fas fa-file-alt me-2"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-50" href="../ingles/perfil.html"><i class="fas fa-user me-2"></i> Profile</a>
+                </li>
+                <li class="nav-itemlo">
+                    <a class="nav-link" href="../ingles/log.html"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <!-- Lista de enlaces del menú lateral -->
-    <div class="offcanvas-body">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="notificaciones.html"><i class="fas fa-bell me-2"></i> Notificaciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Estadísticas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productos.html"><i class="fas fa-box me-2"></i> Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="usuarios.html"><i class="fas fa-users me-2"></i> Usuarios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="bodegas.html"><i class="fas fa-warehouse me-2"></i> Bodegas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="reportes.html"><i class="fas fa-file-alt me-2"></i> Reportes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mb-50" href="perfil.html"><i class="fas fa-user me-2"></i> Perfil</a>
-            </li>
-            <li class="nav-itemlo">
-                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt me-2"></i> Cerrar sesión</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- Fin de Menú lateral -->
- 
 
     <!-- Inicio de Contenido principal (reportes) -->
     <!-- Contenido principal -->

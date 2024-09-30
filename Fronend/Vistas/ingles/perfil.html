@@ -15,104 +15,85 @@
 </head>
 <body>
  
-    <!-- Inicio de header -->
-    <!-- Barra de navegación en la parte superior -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           
-             <!-- Botón para abrir el menú lateral (offcanvas) con el logo -->
             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
-            <img src="/Fronend/assets/img/logo.png" alt="Logo" style="width: 60px; margin-top: auto;"> 
+                <img src="../../assets/img/logo.png" alt="Logo" style="width: 60px;">
             </button>
-
-              <!-- Formulario de búsqueda -->
             <form class="d-flex ms-5">
-                <input class="form-control search-bar" type="search" placeholder="Encontrar..." aria-label="Buscar">
-                <button class="btn btn-outline-light ms-2" type="submit">Ir</button>
+                <input class="form-control search-bar" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-outline-light ms-2" type="submit">Go</button>
             </form>
-
-                <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item1">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-
-                        <!-- Menú desplegable para seleccionar idioma -->
-                        <div class="dropdown">
-                            <button class="btn btn-secondary1 dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Idioma
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/Fronend/Vistas/ingles/index.html">English</a></li>
-                              <li><a class="dropdown-item" href="#">Frances</a></li>
-                              <li><a class="dropdown-item" href="#">Italiano</a></li>
-                            </ul>
-                          </div>
-
-
-                    <!-- Otros vínculos de navegación -->
+    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                          <li><a class="dropdown-item" href="/Fronend/Vistas/index.html">Spanish</a></li>
+                          <li><a class="dropdown-item" href="#">French</a></li>
+                          <li><a class="dropdown-item" href="#">Italian</a></li>
+                        </ul>
+                    </div>
+    
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Bodegas</a>
+                        <a class="nav-link" href="#">Warehouses</a>
                     </li>
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Ayuda</a>
+                        <a class="nav-link" href="#">Help</a>
                     </li>
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Proveedores</a>
+                        <a class="nav-link" href="#">Suppliers</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="perfil.html"><img src="/Fronend/assets/img/avatar.png" alt="Avatar" class="rounded-circle" style="width: 30px; margin-top: auto;"></a>
+                        <a class="nav-link" href="profile.html"><img src="../../assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <!-- Fin de header -->
-
-
-
-<!-- Inicio de Menú lateral -->
-<!-- Menú lateral (offcanvas) que aparece al hacer clic en el logo -->
-<div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
-
-        <!-- Botón para cerrar el menú -->
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+    <div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/notificaciones.html"><i class="fas fa-bell me-2"></i> Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Statistics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/productos.html"><i class="fas fa-box me-2"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/usuarios.html"><i class="fas fa-users me-2"></i> Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/bodegas.html"><i class="fas fa-warehouse me-2"></i> Warehouses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/reportes.html"><i class="fas fa-file-alt me-2"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-50" href="../ingles/perfil.html"><i class="fas fa-user me-2"></i> Profile</a>
+                </li>
+                <li class="nav-itemlo">
+                    <a class="nav-link" href="../ingles/log.html"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <!-- Lista de enlaces del menú lateral -->
-    <div class="offcanvas-body">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="notificaciones.html"><i class="fas fa-bell me-2"></i> Notificaciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Estadísticas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productos.html"><i class="fas fa-box me-2"></i> Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="usuarios.html"><i class="fas fa-users me-2"></i> Usuarios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="bodegas.html"><i class="fas fa-warehouse me-2"></i> Bodegas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="reportes.html"><i class="fas fa-file-alt me-2"></i> Reportes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mb-50" href="perfil.html"><i class="fas fa-user me-2"></i> Perfil</a>
-            </li>
-            <li class="nav-itemlo">
-                <a class="nav-link" href="login.html"><i class="fas fa-sign-out-alt me-2"></i> Cerrar sesión</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- Fin de Menú lateral -->
 
 
 <!-- Inicio de Contenido principal (Tabla de datos de Bodegas) -->
@@ -132,29 +113,29 @@
             <!-- Información del perfil -->
             <h2 class="mt-2 mb-0">Andres Peña</h2>
             <h5 class="text-dark">@andrespena</h5>
-            <h4 class="text-dark1">Administrador</h4>
+            <h4 class="text-dark1">manager</h4>
         </div>
         <div class="card-body">
-            <h4 class="section-title">Sobre mí</h4>
-            <p class="about-text">Soy Andres Peña, instructor en TIC con experiencia en la formación de profesionales en tecnología y gestión de sistemas informáticos. Me apasiona la enseñanza y compartir conocimientos sobre redes, programación y bases de datos.</h4>
+            <h4 class="section-title">About me</h4>
+            <p class="about-text">I am Andres Peña, an ICT instructor with experience in training professionals in technology and management of computer systems. I am passionate about teaching and sharing knowledge about networking, programming and databases.</h4>
             <div class="row">
                 <div class="col-6">
-                    <h6 class="text-dark">Departamento</h6>
-                    <p class="about-text">Formación TIC</p>
-                    <h6 class="text-dark">Ubicación</h6>
+                    <h6 class="text-dark">Department</h6>
+                    <p class="about-text">TIC Training</p>
+                    <h6 class="text-dark">Location</h6>
                     <p class="about-text">Bogotá, Colombia</p>
                 </div>
                 <div class="col-6 text-start">
-                    <h6 class="text-dark">Fecha de Ingreso</h6>
+                    <h6 class="text-dark">Date of Entry</h6>
                     <p class="about-text">Junio 2023</p>
-                    <h6 class="text-dark">Habilidades Técnicas</h6>
-                    <p class="about-text">Redes de computadoras, Programación en Python, Bases de datos</p>
+                    <h6 class="text-dark">Technical Skills</h6>
+                    <p class="about-text">Computer Networking, Python Programming, Databases</p>
                 </div>
             </div>
         </div>
         <div class="card-footer text-center bg-light">
             <!-- Botón para abrir el modal de editar perfil -->
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editarperfil">Editar Perfil</button>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editarperfil">Edit Profile</button>
         </div>
     </div>
 </div>
@@ -168,7 +149,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="fotoperfilLabel">Cambiar Foto de Perfil</h5>
+                <h5 class="modal-title" id="fotoperfilLabel">Change Profile Photo</h5>
                 <button type="button" class="btn-close7" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -177,7 +158,7 @@
                 <!-- formulario para Selecciona una nueva imagen -->
                 <form>
                     <div class="mb-3 text-center">
-                        <label for="fileInputModal" class="form-label">Selecciona una nueva imagen</label>
+                        <label for="fileInputModal" class="form-label">Select a new image</label>
                         <input type="file" class="form-control" id="fileInputModal">
                         <!-- Previsualización de la imagen seleccionada -->
                         <img id="previewImage" class="img-thumbnail mt-3" src="/Fronend/assets/img/avatar.png" alt="Previsualización de imagen" style="max-width: 200px;">
@@ -187,8 +168,8 @@
             </div>
             <div class="modal-footer">
                 <!-- Botones para cerrar  y guardar cambios -->
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary1">Guardar Cambios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary1">Save Changes</button>
             </div>
         </div>
     </div>
@@ -202,7 +183,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="editarperfilLabel">Editar Perfil</h5>
+                <h5 class="modal-title" id="editarperfilLabel">Edit Profile</h5>
                 <button type="button" class="btn-close7" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -212,32 +193,32 @@
                 <form>
                     <!-- Campo para editar el nombre -->
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
+                        <label for="nombre" class="form-label">Name</label>
                         <input type="text" class="form-control" id="nombre" value="Andres Peña">
                     </div>
 
                     <!-- Campo para editar la descripción -->
                     <div class="mb-3">
                         <label for="descripcion" class="form-label">Descripción</label>
-                        <textarea class="form-control" id="descripcion" rows="3">Soy Andres Peña, instructor en TIC con experiencia en la formación de profesionales en tecnología...</textarea>
+                        <textarea class="form-control" id="descripcion" rows="3">I am Andres Peña, an ICT instructor with experience in training technology professionals...</textarea>
                     </div>
 
                     <!-- Campo para editar el departamento -->
                     <div class="mb-3">
-                        <label for="departamento" class="form-label">Departamento</label>
+                        <label for="departamento" class="form-label">Department</label>
                         <input type="text" class="form-control" id="departamento" value="Formación TIC">
                     </div>
 
                     <!-- Campo para editar la fecha de ingreso -->
                     <div class="mb-3">
-                        <label for="fechaIngreso" class="form-label">Fecha de Ingreso</label>
+                        <label for="fechaIngreso" class="form-label">Date of Entry</label>
                         <input type="text" class="form-control" id="fechaIngreso" value="Junio 2023">
                     </div>
 
                     <!-- Campo para editar habilidades técnicas -->
                     <div class="mb-3">
-                        <label for="habilidades" class="form-label">Habilidades Técnicas</label>
-                        <textarea type="text" class="form-control" id="habilidades" rows="3">Redes de computadoras, Programación en Python, Bases de datos></textarea>
+                        <label for="habilidades" class="form-label">Technical Skills</label>
+                        <textarea type="text" class="form-control" id="habilidades" rows="3">Computer Networking, Python Programming, Databases</textarea>
                     </div>
                 </form>
                 <!-- Fin de formulario para editar el nombre -->
@@ -245,8 +226,8 @@
             <div class="modal-footer">
 
                 <!-- Botones para cerrar  y guardar cambios -->
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary1">Guardar Cambios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary1">Save Changes</button>
             </div>
         </div>
     </div>
@@ -258,7 +239,7 @@
 <footer>
 
     <div class="container" class="margin-top">
-        <p>&copy; 2024 SENA. Todos los derechos reservados.</p>
+        <p>&copy; 2024 SENA. All rights reserved.</p>
     </div>
 </footer>
 <!-- Fin de footer -->

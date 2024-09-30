@@ -15,104 +15,85 @@
 </head>
 <body>
     
-    <!-- Inicio de header -->
-    <!-- Barra de navegación en la parte superior -->
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          
-             <!-- Botón para abrir el menú lateral (offcanvas) con el logo -->
-            <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
-            <img src="/Fronend/assets/img/logo.png" alt="Logo" style="width: 60px;"> 
-            </button>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      
+        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
+            <img src="../../assets/img/logo.png" alt="Logo" style="width: 60px;">
+        </button>
+        <form class="d-flex ms-5">
+            <input class="form-control search-bar" type="search" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-outline-light ms-2" type="submit">Go</button>
+        </form>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item1">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
 
-              <!-- Formulario de búsqueda -->
-            <form class="d-flex ms-5">
-                <input class="form-control search-bar" type="search" placeholder="Encontrar..." aria-label="Buscar">
-                <button class="btn btn-outline-light ms-2" type="submit">Ir</button>
-            </form>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="/Fronend/Vistas/index.html">Spanish</a></li>
+                      <li><a class="dropdown-item" href="#">French</a></li>
+                      <li><a class="dropdown-item" href="#">Italian</a></li>
+                    </ul>
+                </div>
 
-                <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item1">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-
-                        <!-- Menú desplegable para seleccionar idioma -->
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Idioma
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/Fronend/Vistas/ingles/index.html">English</a></li>
-                              <li><a class="dropdown-item" href="#">Frances</a></li>
-                              <li><a class="dropdown-item" href="#">Italiano</a></li>
-                            </ul>
-                          </div>
-
-
-                    <!-- Otros vínculos de navegación -->
-                    <li class="nav-item1">
-                        <a class="nav-link" href="#">Bodegas</a>
-                    </li>
-                    <li class="nav-item1">
-                        <a class="nav-link" href="#">Ayuda</a>
-                    </li>
-                    <li class="nav-item1">
-                        <a class="nav-link" href="#">Proveedores</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="perfil.html"><img src="/Fronend/assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-item1">
+                    <a class="nav-link" href="#">Warehouses</a>
+                </li>
+                <li class="nav-item1">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item1">
+                    <a class="nav-link" href="#">Suppliers</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="profile.html"><img src="../../assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
+                </li>
+            </ul>
         </div>
-    </header>
-    <!-- Fin de header -->
+    </div>
+</header>
 
-
-
-<!-- Inicio de Menú lateral -->
-<!-- Menú lateral (offcanvas) que aparece al hacer clic en el logo -->
 <div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
-
-        <!-- Botón para cerrar el menú -->
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-
-    <!-- Lista de enlaces del menú lateral -->
     <div class="offcanvas-body">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link" href="notificaciones.html"><i class="fas fa-bell me-2"></i> Notificaciones</a>
+                <a class="nav-link" href="../ingles/notificaciones.html"><i class="fas fa-bell me-2"></i> Notifications</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Estadísticas</a>
+                <a class="nav-link" href="../ingles/estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Statistics</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="productos.html"><i class="fas fa-box me-2"></i> Productos</a>
+                <a class="nav-link" href="../ingles/productos.html"><i class="fas fa-box me-2"></i> Products</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="usuarios.html"><i class="fas fa-users me-2"></i> Usuarios</a>
+                <a class="nav-link" href="../ingles/usuarios.html"><i class="fas fa-users me-2"></i> Users</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="bodegas.html"><i class="fas fa-warehouse me-2"></i> Bodegas</a>
+                <a class="nav-link" href="../ingles/bodegas.html"><i class="fas fa-warehouse me-2"></i> Warehouses</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="reportes.html"><i class="fas fa-file-alt me-2"></i> Reportes</a>
+                <a class="nav-link" href="../ingles/reportes.html"><i class="fas fa-file-alt me-2"></i> Reports</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link mb-50" href="perfil.html"><i class="fas fa-user me-2"></i> Perfil</a>
+                <a class="nav-link mb-50" href="../ingles/perfil.html"><i class="fas fa-user me-2"></i> Profile</a>
             </li>
             <li class="nav-itemlo">
-                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt me-2"></i> Cerrar sesión</a>
+                <a class="nav-link" href="../ingles/log.html"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
             </li>
         </ul>
     </div>
 </div>
-<!-- Fin de Menú lateral -->
 
 
 <!-- Inicio Sección Principal de producto -->
@@ -139,35 +120,35 @@
       <div class="col-md-6 product-info">
         <h2>Laptop UltraBook Pro</h2>
         <div class="mt-2 mb-4">
-          <span class="badge badge-success">En Stock: 250 unidades</span>
+          <span class="badge badge-success">In Stock: 250 units</span>
         </div>
         <p>
-          Esta ultrabook ligera combina un diseño elegante con un potente rendimiento, ideal para profesionales en movimiento.
+          This lightweight ultrabook combines sleek design with powerful performance, ideal for professionals on the go.
         </p>
         <ul class="list-unstyled">
-          <li><strong>Categoría:</strong> Electrónica</li>
-          <li><strong>Marca:</strong> SwiftLine</li>
-          <li><strong>Número de Serie:</strong> SL2023-UL-5284</li>
-          <li><strong>Ubicación en Almacén:</strong> Estantería B-45</li>
+          <li><strong>Category:</strong> Electronics</li>
+          <li><strong>Brand:</strong> SwiftLine</li>
+          <li><strong>Serial Number:</strong> SL2023-UL-5284</li>
+          <li><strong>Location in Warehouse:</strong> Shelf B-45</li>
         </ul>
 
-        <h5 class="mt-4_1">Especificaciones de Inventario</h5>
+        <h5 class="mt-4_1">Inventory Specifications</h5>
         <ul class="list-unstyled_1">
-          <li><strong>Tipo de Producto:</strong>Electrónico</li>
-          <li><strong>Dimensiones:</strong> 30.5 cm x 21 cm x 1.5 cm</li>
-          <li><strong>Peso por Unidad:</strong>  1.2 kg</li>
-          <li><strong>Material:</strong> Aleación de aluminio, plástico</li>
-          <li><strong>Color:</strong> Negro</li>
+          <li><strong>Product Type:</strong>Electronic</li>
+          <li><strong>Dimensions:</strong> 30.5 cm x 21 cm x 1.5 cm</li>
+          <li><strong>Unit Weight:</strong> 1.2 kg</li>
+          <li><strong>Material:</strong> Aluminum alloy, plastic</li>
+          <li><strong>Color:</strong> Black</li>
         </ul>
 
-        <h5 class="mt-4_2">Información de Almacenamiento</h5>
+        <h5 class="mt-4_2">Storage Information</h5>
         <p class="condi">
-          <strong>Condiciones de Almacenamiento:</strong> Almacenar en un lugar fresco y seco, alejado de la luz solar directa. Manipular con cuidado para evitar golpes o caídas.
+          <strong>Storage Conditions:</strong> Store in a cool, dry place, away from direct sunlight. Handle carefully to avoid bumps or falls.
         </p>
 
         <!-- Contador para cantidad y botón de completar pedido -->
         <div class="d-flex align-items-center">
-          <h5 class="cant">Cantidad</h5>
+          <h5 class="cant">Quantity</h5>
           <input
             type="number"
             class="form-control mr-3"
@@ -177,7 +158,7 @@
           />
 
           <button class="truck-button">
-            <span class="default">Confirmar orden</span>
+            <span class="default">Confirm Order</span>
             <span class="success">
               Order Placed
               <svg viewbox="0 0 12 10">
@@ -211,7 +192,7 @@
 <footer>
 
     <div class="container" class="margin-top">
-        <p>&copy; 2024 SENA. Todos los derechos reservados.</p>
+        <p>&copy; 2024 SENA. All rights reserved.</p>
     </div>
 </footer>
 <!-- Fin de footer -->

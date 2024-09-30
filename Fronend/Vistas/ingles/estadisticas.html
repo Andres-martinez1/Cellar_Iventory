@@ -15,104 +15,85 @@
 </head>
 <body>
  
-    <!-- Inicio de header -->
-    <!-- Barra de navegación en la parte superior -->
     <header class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           
-             <!-- Botón para abrir el menú lateral (offcanvas) con el logo -->
             <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" style="border: none; background-color: transparent; padding-top:12px; margin-left: 30px; margin-right: 100px;">
-            <img src="/Fronend/assets/img/logo.png" alt="Logo" style="width: 60px;"> 
+                <img src="../../assets/img/logo.png" alt="Logo" style="width: 60px;">
             </button>
-
-              <!-- Formulario de búsqueda -->
             <form class="d-flex ms-5">
-                <input class="form-control search-bar" type="search" placeholder="Encontrar..." aria-label="Buscar">
-                <button class="btn btn-outline-light ms-2" type="submit">Ir</button>
+                <input class="form-control search-bar" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-outline-light ms-2" type="submit">Go</button>
             </form>
-
-                <!-- Navegación adicional (colapsada en pantallas pequeñas) -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item1">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
-
-                        <!-- Menú desplegable para seleccionar idioma -->
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Idioma
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/Fronend/Vistas/ingles/index.html">English</a></li>
-                              <li><a class="dropdown-item" href="#">Frances</a></li>
-                              <li><a class="dropdown-item" href="#">Italiano</a></li>
-                            </ul>
-                          </div>
-
-
-                    <!-- Otros vínculos de navegación -->
+    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Language
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                          <li><a class="dropdown-item" href="/Fronend/Vistas/index.html">Spanish</a></li>
+                          <li><a class="dropdown-item" href="#">French</a></li>
+                          <li><a class="dropdown-item" href="#">Italian</a></li>
+                        </ul>
+                    </div>
+    
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Bodegas</a>
+                        <a class="nav-link" href="#">Warehouses</a>
                     </li>
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Ayuda</a>
+                        <a class="nav-link" href="#">Help</a>
                     </li>
                     <li class="nav-item1">
-                        <a class="nav-link" href="#">Proveedores</a>
+                        <a class="nav-link" href="#">Suppliers</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="perfil.html"><img src="/Fronend/assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
+                        <a class="nav-link" href="profile.html"><img src="../../assets/img/avatar.png" alt="Avatar" class="rounded-circle" width="30"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <!-- Fin de header -->
-
-
-<!-- Inicio de Menú lateral -->
-<!-- Menú lateral (offcanvas) que aparece al hacer clic en el logo -->
-<div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
-
-        <!-- Botón para cerrar el menú -->
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+    <div class="offcanvas offcanvas-start offcanvas-menu" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/notificaciones.html"><i class="fas fa-bell me-2"></i> Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Statistics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/productos.html"><i class="fas fa-box me-2"></i> Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/usuarios.html"><i class="fas fa-users me-2"></i> Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/bodegas.html"><i class="fas fa-warehouse me-2"></i> Warehouses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ingles/reportes.html"><i class="fas fa-file-alt me-2"></i> Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-50" href="../ingles/perfil.html"><i class="fas fa-user me-2"></i> Profile</a>
+                </li>
+                <li class="nav-itemlo">
+                    <a class="nav-link" href="../ingles/log.html"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+                </li>
+            </ul>
+        </div>
     </div>
-
-    <!-- Lista de enlaces del menú lateral -->
-    <div class="offcanvas-body">
-        <ul class="nav flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="notificaciones.html"><i class="fas fa-bell me-2"></i> Notificaciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="estadisticas.html"><i class="fas fa-chart-bar me-2"></i> Estadísticas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="productos.html"><i class="fas fa-box me-2"></i> Productos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="usuarios.html"><i class="fas fa-users me-2"></i> Usuarios</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="bodegas.html"><i class="fas fa-warehouse me-2"></i> Bodegas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="reportes.html"><i class="fas fa-file-alt me-2"></i> Reportes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mb-50" href="perfil.html"><i class="fas fa-user me-2"></i> Perfil</a>
-            </li>
-            <li class="nav-itemlo">
-                <a class="nav-link" href="#"><i class="fas fa-sign-out-alt me-2"></i> Cerrar sesión</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- Fin de Menú lateral -->
-
 
     <!-- Inicio de Contenido principal (Tabla de datos de Bodegas) -->
     <!-- Contenido principal -->
@@ -121,7 +102,7 @@
         <!-- Tabla de datos de Bodegas -->
         <div class="card mb-4">
             <div class="card-body">
-                <h5 class="card-title">Datos de Bodegas</h5>
+                <h5 class="card-title">Winery Data</h5>
                 
                 <!-- Barra de búsqueda dentro de la tabla -->
                 <input class="form-control mb-3" type="search" id="searchInput" placeholder="Buscar Bodega...">
@@ -130,22 +111,22 @@
                 <table class="table table-bordered" id="dataTable">
                     <thead>
                         <tr>
-                            <th>Bodega</th>
-                            <th>Sede</th>
-                            <th>Centro</th>
-                            <th>Municipio</th>
-                            <th>Productos</th>
-                            <th>Usuarios</th>
-                            <th>Prestamos</th>
-                            <th>Devoluciones</th>
-                            <th>Acciones</th>
+                            <th>wine cellar</th>
+                            <th>headquarters</th>
+                            <th>center</th>
+                            <th>municipality</th>
+                            <th>products</th>
+                            <th>Users</th>
+                            <th>Loans</th>
+                            <th>Returns</th>
+                            <th>actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>TIC</td>
                             <td>Yamboró</td>
-                            <td>Gestion y desarrollo sur colombiano</td>
+                            <td>Management and development in southern Colombia</td>
                             <td>Pitalito</td>
                             <td>500</td>
                             <td>200</td>
@@ -154,14 +135,14 @@
                             <td>
 
                                  <!-- Botones para editar y eliminar registros -->
-                                <button class="btn btn-sm btn-primary edit-btn">Editar</button>
-                                <button class="btn btn-sm btn-danger delete-btn">Eliminar</button>
+                                <button class="btn btn-sm btn-primary edit-btn">Edit</button>
+                                <button class="btn btn-sm btn-danger delete-btn">Eliminate</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>Gastronomia</td>
+                            <td>Gastronomy</td>
                             <td>Yamboró</td>
-                            <td>Gestion y desarrollo sur colombiano</td>
+                            <td>Management and development in southern Colombia</td>
                             <td>Pitalito</td>
                             <td>12000</td>
                             <td>600</td>
@@ -175,9 +156,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Multimedia</td>
+                            <td>multimedia</td>
                             <td>Yamboró</td>
-                            <td>Gestion y desarrollo sur colombiano</td>
+                            <td>Management and development in southern Colombia</td>
                             <td>Pitalito</td>
                             <td>15000</td>
                             <td>700</td>
@@ -191,9 +172,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Agropecuaria</td>
+                            <td>Agricultural</td>
                             <td>Yamboró</td>
-                            <td>Gestion y desarrollo sur colombiano</td>
+                            <td>Management and development in southern Colombia</td>
                             <td>Pitalito</td>
                             <td>9000</td>
                             <td>400</td>
@@ -207,9 +188,9 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Escuela Nacional del café</td>
+                            <td>National Coffee School</td>
                             <td>Yamboró</td>
-                            <td>Gestion y desarrollo sur colombiano</td>
+                            <td>Management and development in southern Colombia</td>
                             <td>Pitalito</td>
                             <td>5000</td>
                             <td>300</td>
@@ -235,7 +216,7 @@
             <div class="col-lg-6 mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Mapa de Colombia</h5>
+                        <h5 class="card-title">Map of Colombia</h5>
                         <!-- Aquí se pretende agregar un mapa coomo estadistica -->
                     </div>
                 </div>
@@ -243,7 +224,7 @@
             <div class="col-lg-6 mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Productos por Bodega</h5>
+                        <h5 class="card-title">Products by Winery</h5>
                         <!-- Aquí se pretende agregar gráficos de productos por bodega -->
                     </div>
                 </div>
@@ -255,7 +236,7 @@
             <div class="col-lg-6 mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Clientes por Sede</h5>
+                        <h5 class="card-title">Customers by Location</h5>
                          <!-- Aquí sse pretende agregar gráficos de clientes por sede -->
                     </div>
                 </div>
@@ -263,14 +244,14 @@
             <div class="col-lg-6 mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Resumen</h5>
+                        <h5 class="card-title">Summary</h5>
 
                         <!-- Lista de información resumida -->
                         <ul class="list-group">
-                            <li class="list-group-item">Productos Totales: 62000</li>
-                            <li class="list-group-item">Usuarios Totales: 3200</li>
-                            <li class="list-group-item">Prestamos Totales: 1200</li>
-                            <li class="list-group-item">Devoluciones Totales: 1100</li>
+                            <li class="list-group-item">Total Products: 62000</li>
+                            <li class="list-group-item">Users Totales: 3200</li>
+                            <li class="list-group-item">Loans Totales: 1200</li>
+                            <li class="list-group-item">ReturnsTotales: 1100</li>
                         </ul>
                     </div>
                 </div>
@@ -288,7 +269,7 @@
 <footer>
 
     <div class="container" class="margin-top">
-        <p>&copy; 2024 SENA. Todos los derechos reservados.</p>
+        <p>&copy; 2024 SENA. All rights reserved.</p>
     </div>
 </footer>
 <!-- Fin de footer -->
