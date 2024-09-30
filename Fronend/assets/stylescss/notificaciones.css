@@ -41,3 +41,8 @@
     font-size: 16px;
 }
 /* Fin para las alertas */
+
+
+.card-header{
+    background-color: black;
+}
